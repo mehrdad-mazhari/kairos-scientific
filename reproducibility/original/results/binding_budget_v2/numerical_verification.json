@@ -1,0 +1,3027 @@
+{
+  "completed": 54,
+  "required": 54,
+  "all_completed_checks_pass": true,
+  "global_checks": {
+    "frozen_sources": true,
+    "original_experiment_unchanged": true,
+    "training_ensemble_unchanged": true,
+    "selection_ensemble_unchanged": true,
+    "all_optimization_checkpoints_valid": true
+  },
+  "invalid_trials": [],
+  "trial_checks": {
+    "trial_equal_objectives_0_7500_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 24,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "453c87169243df8e0bd74a902622eb46c31488b612821ce40d5d3a507be637c2",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.6983981843132767e-07,
+            "maximum_leakage_error": 7.01522199506312e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.239063988720204e-08,
+            "maximum_leakage_error": 1.7532581800150274e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 6.630980486921345e-16,
+          "maximum_gradient_error": 2.973424458041496e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.132428121377405e-14,
+            "hermiticity_error": 3.1084386001641986e-15,
+            "minimum_eigenvalue": 5.438974684398492e-10
+          },
+          "8": {
+            "trace_error": 2.509104224381672e-14,
+            "hermiticity_error": 3.075598954609991e-15,
+            "minimum_eigenvalue": 5.439699307350367e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.9585287320001044,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_0_7500_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 24,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "e90520d701aa2649e4260a94fa52dc59e29aa78f0a796ca7744b23caa267f2d7",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.728292915448293e-07,
+            "maximum_leakage_error": 4.4135537749875496e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.310121359818453e-08,
+            "maximum_leakage_error": 1.1056270892781796e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 3.0721952759549254e-15,
+          "maximum_gradient_error": 3.7296554733501353e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.1102240518128246e-14,
+            "hermiticity_error": 3.1087407522987383e-15,
+            "minimum_eigenvalue": 5.475153527921761e-10
+          },
+          "8": {
+            "trace_error": 3.086420312411949e-14,
+            "hermiticity_error": 2.8946334544677157e-15,
+            "minimum_eigenvalue": 5.475877289642425e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8434628040001826,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_0_7500_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 24,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "a66241f199889ed9e8a962a6da73058de49edd8c80260565fd50378e018c44ed",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.8088798758864044e-07,
+            "maximum_leakage_error": 5.394261095790343e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.517183471719477e-08,
+            "maximum_leakage_error": 1.3473582305805203e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 2.2950391587173158e-15,
+          "maximum_gradient_error": 2.8275992658421956e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 8.215650943088967e-15,
+            "hermiticity_error": 2.885233319540774e-15,
+            "minimum_eigenvalue": 5.334318603650089e-10
+          },
+          "8": {
+            "trace_error": 2.6423309351382802e-14,
+            "hermiticity_error": 6.318367257904493e-15,
+            "minimum_eigenvalue": 5.334993031772164e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.943768059000149,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_0_7501_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 24,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "8c8ba7175a0c14af4c6bebae0237a6ee3c5736cd08a0df4f023bdc5448376e04",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.6941127511937992e-07,
+            "maximum_leakage_error": 8.559213366409905e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.2326472549092387e-08,
+            "maximum_leakage_error": 2.1357457440023095e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.53479659537048e-15,
+          "maximum_gradient_error": 2.9910427433443854e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 8.659783178168698e-15,
+            "hermiticity_error": 3.0501155054132854e-15,
+            "minimum_eigenvalue": 5.471119916330392e-10
+          },
+          "8": {
+            "trace_error": 3.042011107069849e-14,
+            "hermiticity_error": 3.059344202243491e-15,
+            "minimum_eigenvalue": 5.471869649916787e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.292790272000275,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_0_7501_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 24,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "70a3f912f61ca8ec05aacd69378e67aadc9f9dd7feafb6c56fd125e5fe6c1639",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.709390081705564e-07,
+            "maximum_leakage_error": 6.679013165524926e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.276632969979488e-08,
+            "maximum_leakage_error": 1.669168709588604e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 2.8622937353617317e-16,
+          "maximum_gradient_error": 4.163336342344337e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.0325092306146041e-14,
+            "hermiticity_error": 1.983993631648033e-15,
+            "minimum_eigenvalue": 5.478652843347344e-10
+          },
+          "8": {
+            "trace_error": 2.4424906552352405e-14,
+            "hermiticity_error": 5.169545812575538e-15,
+            "minimum_eigenvalue": 5.479399590515751e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8693233870003496,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_0_7501_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 24,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "a66241f199889ed9e8a962a6da73058de49edd8c80260565fd50378e018c44ed",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.8088798758864044e-07,
+            "maximum_leakage_error": 5.394261095790343e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.517183471719477e-08,
+            "maximum_leakage_error": 1.3473582305805203e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 2.2950391587173158e-15,
+          "maximum_gradient_error": 2.8275992658421956e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 8.215650943088967e-15,
+            "hermiticity_error": 2.885233319540774e-15,
+            "minimum_eigenvalue": 5.334318603650089e-10
+          },
+          "8": {
+            "trace_error": 2.6423309351382802e-14,
+            "hermiticity_error": 6.318367257904493e-15,
+            "minimum_eigenvalue": 5.334993031772164e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8507209300000795,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_0_7502_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 24,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "d7251987399fbdee7efc5bcef6900c32bb148d613b1cb8f71774769b27d27d9b",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7390952355977873e-07,
+            "maximum_leakage_error": 7.605054270149781e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.348983795310346e-08,
+            "maximum_leakage_error": 1.9003198528553752e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.2893332235197619e-15,
+          "maximum_gradient_error": 2.9444220499275087e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.1768364200025169e-14,
+            "hermiticity_error": 5.261643080744191e-15,
+            "minimum_eigenvalue": 5.389615619396741e-10
+          },
+          "8": {
+            "trace_error": 2.2426505917032147e-14,
+            "hermiticity_error": 3.1986720415755647e-15,
+            "minimum_eigenvalue": 5.390338929282978e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.3267635709999013,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_0_7502_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 24,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "19ae728c9b1bdd0b1c63efbdc01fc69d5602a0102acf8ace0d65874d1af5b73f",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7472332591861317e-07,
+            "maximum_leakage_error": 6.532934329380721e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.363650274452624e-08,
+            "maximum_leakage_error": 1.636886594785146e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.5456386170953351e-15,
+          "maximum_gradient_error": 5.160802341031001e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.776357094419899e-14,
+            "hermiticity_error": 3.0238135860949723e-15,
+            "minimum_eigenvalue": 5.428806753386051e-10
+          },
+          "8": {
+            "trace_error": 1.7319482434898582e-14,
+            "hermiticity_error": 2.5199632853098013e-15,
+            "minimum_eigenvalue": 5.429542546119163e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.904498113000045,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_0_7502_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 24,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "a66241f199889ed9e8a962a6da73058de49edd8c80260565fd50378e018c44ed",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.8088798758864044e-07,
+            "maximum_leakage_error": 5.394261095790343e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.517183471719477e-08,
+            "maximum_leakage_error": 1.3473582305805203e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 2.2950391587173158e-15,
+          "maximum_gradient_error": 2.8275992658421956e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 8.215650943088967e-15,
+            "hermiticity_error": 2.885233319540774e-15,
+            "minimum_eigenvalue": 5.334318603650089e-10
+          },
+          "8": {
+            "trace_error": 2.6423309351382802e-14,
+            "hermiticity_error": 6.318367257904493e-15,
+            "minimum_eigenvalue": 5.334993031772164e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.9391311569997924,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_1_7500_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 48,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "1e90ff8e7320c62823d5f6d97aa2acf7eae024d55b84d8c35dd40fc10c6f3901",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.832957950975711e-07,
+            "maximum_leakage_error": 5.945185256692621e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.6005793064018974e-08,
+            "maximum_leakage_error": 1.4832557680461052e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.059482362952835e-15,
+          "maximum_gradient_error": 2.666595243228098e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.2323477740838162e-14,
+            "hermiticity_error": 1.934880730341863e-15,
+            "minimum_eigenvalue": 5.412849361621495e-10
+          },
+          "8": {
+            "trace_error": 1.798561579508707e-14,
+            "hermiticity_error": 4.537603864682459e-15,
+            "minimum_eigenvalue": 5.413518375154353e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.3216389010003695,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_1_7500_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 48,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "2bef3ee005d3da70ca232e3af34348d5a4a83945f548da4ac519a64988bf8709",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 2.884409621151107e-07,
+            "maximum_leakage_error": 1.7447227486572844e-07
+          },
+          "8": {
+            "maximum_fidelity_error": 7.20613162474848e-08,
+            "maximum_leakage_error": 4.3616032549217455e-08
+          }
+        },
+        "gradient": {
+          "objective_error": 2.3271315430228867e-15,
+          "maximum_gradient_error": 6.140921104957897e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 9.769963433691114e-15,
+            "hermiticity_error": 4.378842746638887e-15,
+            "minimum_eigenvalue": 5.909666265157543e-10
+          },
+          "8": {
+            "trace_error": 2.109423751555679e-14,
+            "hermiticity_error": 3.4803380797430672e-15,
+            "minimum_eigenvalue": 5.910448339554873e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.9262989220005693,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_1_7500_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 48,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "688247e572ef6589e5a9bf43a9457f9faddc022d808f46698856889bbff17343",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 2.595731739551965e-07,
+            "maximum_leakage_error": 5.117478797257144e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 6.480279213239015e-08,
+            "maximum_leakage_error": 1.2787117234061324e-08
+          }
+        },
+        "gradient": {
+          "objective_error": 2.3245294578089215e-16,
+          "maximum_gradient_error": 4.874572967494828e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.3100643474551478e-14,
+            "hermiticity_error": 3.1141202117325186e-15,
+            "minimum_eigenvalue": 7.632159336733026e-10
+          },
+          "8": {
+            "trace_error": 2.7311490501784317e-14,
+            "hermiticity_error": 3.525247709123999e-15,
+            "minimum_eigenvalue": 7.633134326759254e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.9008124960000714,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_1_7501_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 48,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "9f1ca701d90d59a0a6d7aee5e546114d12dbc39f632da46a7228d27af67a7032",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.793885017198349e-07,
+            "maximum_leakage_error": 2.3336984988439765e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.4872640714288536e-08,
+            "maximum_leakage_error": 5.833571710474219e-10
+          }
+        },
+        "gradient": {
+          "objective_error": 2.8536201179818477e-16,
+          "maximum_gradient_error": 3.002155815612362e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.4654944959489104e-14,
+            "hermiticity_error": 1.861987896435023e-15,
+            "minimum_eigenvalue": 5.421850787914601e-10
+          },
+          "8": {
+            "trace_error": 2.6645352915507077e-14,
+            "hermiticity_error": 3.2633290744884725e-15,
+            "minimum_eigenvalue": 5.422528268910582e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.4655789879998338,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_1_7501_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 48,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "eb27230aef3c5bd9001e7873bb3035df5b26acec9f7156d32ed3b299daad4531",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.83570083134299e-07,
+            "maximum_leakage_error": 4.639498698758823e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.591513880214393e-08,
+            "maximum_leakage_error": 1.1596530544000065e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 2.753006156375193e-15,
+          "maximum_gradient_error": 6.392456008974534e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 2.3314693091983508e-14,
+            "hermiticity_error": 5.993659815622935e-15,
+            "minimum_eigenvalue": 5.367583929994958e-10
+          },
+          "8": {
+            "trace_error": 1.9095836024441818e-14,
+            "hermiticity_error": 3.3761345704603783e-15,
+            "minimum_eigenvalue": 5.368269459798463e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.9271093110000947,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_1_7501_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 48,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "1c81a743ad117d0a4df9018fd4fbe4eea6e1e11e6a194a81e25b55b67f418576",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 2.5470128051097163e-07,
+            "maximum_leakage_error": 4.809212531975974e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 6.37431813999001e-08,
+            "maximum_leakage_error": 1.2024840839135588e-08
+          }
+        },
+        "gradient": {
+          "objective_error": 2.975050761300224e-15,
+          "maximum_gradient_error": 4.753142324176451e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.2989609389903888e-14,
+            "hermiticity_error": 5.302686665288135e-15,
+            "minimum_eigenvalue": 7.658383325909542e-10
+          },
+          "8": {
+            "trace_error": 1.8207657914278008e-14,
+            "hermiticity_error": 3.685418373095686e-15,
+            "minimum_eigenvalue": 7.659359800141493e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.925593277999724,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_1_7502_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 48,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "c10ee9ffadef6b447d6050b4ba9277a5f196e956919e41dffed3f77ec49dca81",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.8067157936396683e-07,
+            "maximum_leakage_error": 2.08001939578376e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.528380215251815e-08,
+            "maximum_leakage_error": 5.183564711192217e-10
+          }
+        },
+        "gradient": {
+          "objective_error": 1.0607834055598175e-15,
+          "maximum_gradient_error": 3.174543961037557e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.2656542664127308e-14,
+            "hermiticity_error": 4.1159120875824986e-15,
+            "minimum_eigenvalue": 5.356028829426741e-10
+          },
+          "8": {
+            "trace_error": 1.6209256190777348e-14,
+            "hermiticity_error": 2.8360628300943013e-15,
+            "minimum_eigenvalue": 5.356688905225307e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.3394301300013467,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_1_7502_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 48,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "47e6480edb2cc2a2b6cb69218c6cb7f37cec57ed97332a2b1ce9613c0e2c01db",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 4.1754038360153345e-07,
+            "maximum_leakage_error": 2.667404030927455e-07
+          },
+          "8": {
+            "maximum_fidelity_error": 1.0436003627933843e-07,
+            "maximum_leakage_error": 6.66692923035543e-08
+          }
+        },
+        "gradient": {
+          "objective_error": 3.2491370705045597e-15,
+          "maximum_gradient_error": 6.071532165918825e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 9.769983245987452e-15,
+            "hermiticity_error": 4.2621234812023984e-15,
+            "minimum_eigenvalue": 6.106458531356068e-10
+          },
+          "8": {
+            "trace_error": 3.21964677256118e-14,
+            "hermiticity_error": 3.280243092415043e-15,
+            "minimum_eigenvalue": 6.107397119664016e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.909212110998851,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_objectives_1_7502_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 48,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "599607683eb61e441001aaf91a3ff00d539801f50106b7f39158e67ad589f624",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 2.6182081214187747e-07,
+            "maximum_leakage_error": 4.900622439719027e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 6.552885867261438e-08,
+            "maximum_leakage_error": 1.2251536110170433e-08
+          }
+        },
+        "gradient": {
+          "objective_error": 2.361826012542423e-15,
+          "maximum_gradient_error": 3.608224830031759e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.3100633806871616e-14,
+            "hermiticity_error": 5.218541903054379e-15,
+            "minimum_eigenvalue": 7.627663348891863e-10
+          },
+          "8": {
+            "trace_error": 1.8429707144245188e-14,
+            "hermiticity_error": 4.574956909746309e-15,
+            "minimum_eigenvalue": 7.628628563382157e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.9141184099989914,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_0_7500_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 47,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "1e90ff8e7320c62823d5f6d97aa2acf7eae024d55b84d8c35dd40fc10c6f3901",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.832957950975711e-07,
+            "maximum_leakage_error": 5.945185256692621e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.6005793064018974e-08,
+            "maximum_leakage_error": 1.4832557680461052e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.059482362952835e-15,
+          "maximum_gradient_error": 2.666595243228098e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.2323477740838162e-14,
+            "hermiticity_error": 1.934880730341863e-15,
+            "minimum_eigenvalue": 5.412849361621495e-10
+          },
+          "8": {
+            "trace_error": 1.798561579508707e-14,
+            "hermiticity_error": 4.537603864682459e-15,
+            "minimum_eigenvalue": 5.413518375154353e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.3632991049998964,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_0_7500_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 23,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "e90520d701aa2649e4260a94fa52dc59e29aa78f0a796ca7744b23caa267f2d7",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.728292915448293e-07,
+            "maximum_leakage_error": 4.4135537749875496e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.310121359818453e-08,
+            "maximum_leakage_error": 1.1056270892781796e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 3.0721952759549254e-15,
+          "maximum_gradient_error": 3.7296554733501353e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.1102240518128246e-14,
+            "hermiticity_error": 3.1087407522987383e-15,
+            "minimum_eigenvalue": 5.475153527921761e-10
+          },
+          "8": {
+            "trace_error": 3.086420312411949e-14,
+            "hermiticity_error": 2.8946334544677157e-15,
+            "minimum_eigenvalue": 5.475877289642425e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.9391643769999973,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_0_7500_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 23,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "6631073017652ff69a6ee95b49d54d388c6f191c1d0848d490c5a783fddecb00",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7695834253483866e-07,
+            "maximum_leakage_error": 3.410391296009154e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.437280243241304e-08,
+            "maximum_leakage_error": 8.516378663106429e-10
+          }
+        },
+        "gradient": {
+          "objective_error": 3.524958103184872e-15,
+          "maximum_gradient_error": 6.609296443471635e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 9.325875352167246e-15,
+            "hermiticity_error": 3.004785459975253e-15,
+            "minimum_eigenvalue": 5.361275794888274e-10
+          },
+          "8": {
+            "trace_error": 2.6423320385687395e-14,
+            "hermiticity_error": 4.441579804219966e-15,
+            "minimum_eigenvalue": 5.361965450605333e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.9428318129998843,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_0_7501_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 47,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "4fcfcecc1650e379356dc404ac7edf8a1725acef9e9ef05dfcb1c22d5272158d",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.807884741911181e-07,
+            "maximum_leakage_error": 2.072262122173403e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.515577955999106e-08,
+            "maximum_leakage_error": 5.17532307204346e-10
+          }
+        },
+        "gradient": {
+          "objective_error": 9.1550031444676e-16,
+          "maximum_gradient_error": 3.0314292742694704e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.010303221355903e-14,
+            "hermiticity_error": 6.326218306006175e-15,
+            "minimum_eigenvalue": 5.36909083923939e-10
+          },
+          "8": {
+            "trace_error": 1.953993003548876e-14,
+            "hermiticity_error": 2.392201831476882e-15,
+            "minimum_eigenvalue": 5.369743947226969e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.2997368129999813,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_0_7501_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 23,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "70a3f912f61ca8ec05aacd69378e67aadc9f9dd7feafb6c56fd125e5fe6c1639",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.709390081705564e-07,
+            "maximum_leakage_error": 6.679013165524926e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.276632969979488e-08,
+            "maximum_leakage_error": 1.669168709588604e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 2.8622937353617317e-16,
+          "maximum_gradient_error": 4.163336342344337e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.0325092306146041e-14,
+            "hermiticity_error": 1.983993631648033e-15,
+            "minimum_eigenvalue": 5.478652843347344e-10
+          },
+          "8": {
+            "trace_error": 2.4424906552352405e-14,
+            "hermiticity_error": 5.169545812575538e-15,
+            "minimum_eigenvalue": 5.479399590515751e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.9105050590001156,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_0_7501_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 23,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "6631073017652ff69a6ee95b49d54d388c6f191c1d0848d490c5a783fddecb00",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7695834253483866e-07,
+            "maximum_leakage_error": 3.410391296009154e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.437280243241304e-08,
+            "maximum_leakage_error": 8.516378663106429e-10
+          }
+        },
+        "gradient": {
+          "objective_error": 3.524958103184872e-15,
+          "maximum_gradient_error": 6.609296443471635e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 9.325875352167246e-15,
+            "hermiticity_error": 3.004785459975253e-15,
+            "minimum_eigenvalue": 5.361275794888274e-10
+          },
+          "8": {
+            "trace_error": 2.6423320385687395e-14,
+            "hermiticity_error": 4.441579804219966e-15,
+            "minimum_eigenvalue": 5.361965450605333e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8607865469998615,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_0_7502_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 47,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "c10ee9ffadef6b447d6050b4ba9277a5f196e956919e41dffed3f77ec49dca81",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.8067157936396683e-07,
+            "maximum_leakage_error": 2.08001939578376e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.528380215251815e-08,
+            "maximum_leakage_error": 5.183564711192217e-10
+          }
+        },
+        "gradient": {
+          "objective_error": 1.0607834055598175e-15,
+          "maximum_gradient_error": 3.174543961037557e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.2656542664127308e-14,
+            "hermiticity_error": 4.1159120875824986e-15,
+            "minimum_eigenvalue": 5.356028829426741e-10
+          },
+          "8": {
+            "trace_error": 1.6209256190777348e-14,
+            "hermiticity_error": 2.8360628300943013e-15,
+            "minimum_eigenvalue": 5.356688905225307e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.3647958789997574,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_0_7502_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 23,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "19ae728c9b1bdd0b1c63efbdc01fc69d5602a0102acf8ace0d65874d1af5b73f",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7472332591861317e-07,
+            "maximum_leakage_error": 6.532934329380721e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.363650274452624e-08,
+            "maximum_leakage_error": 1.636886594785146e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.5456386170953351e-15,
+          "maximum_gradient_error": 5.160802341031001e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.776357094419899e-14,
+            "hermiticity_error": 3.0238135860949723e-15,
+            "minimum_eigenvalue": 5.428806753386051e-10
+          },
+          "8": {
+            "trace_error": 1.7319482434898582e-14,
+            "hermiticity_error": 2.5199632853098013e-15,
+            "minimum_eigenvalue": 5.429542546119163e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8775389920001544,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_0_7502_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 23,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "6631073017652ff69a6ee95b49d54d388c6f191c1d0848d490c5a783fddecb00",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7695834253483866e-07,
+            "maximum_leakage_error": 3.410391296009154e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.437280243241304e-08,
+            "maximum_leakage_error": 8.516378663106429e-10
+          }
+        },
+        "gradient": {
+          "objective_error": 3.524958103184872e-15,
+          "maximum_gradient_error": 6.609296443471635e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 9.325875352167246e-15,
+            "hermiticity_error": 3.004785459975253e-15,
+            "minimum_eigenvalue": 5.361275794888274e-10
+          },
+          "8": {
+            "trace_error": 2.6423320385687395e-14,
+            "hermiticity_error": 4.441579804219966e-15,
+            "minimum_eigenvalue": 5.361965450605333e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.873883188999571,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_1_7500_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 95,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "ce98ad4ea249178be452659e012f99622e7a8e30df048fe6317cdf4b78cf6be9",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7033700572266497e-07,
+            "maximum_leakage_error": 1.868770684822007e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 4.2476798634005775e-08,
+            "maximum_leakage_error": 4.670637304941426e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.1917550279960665e-15,
+          "maximum_gradient_error": 4.3568664301329996e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.1546344864006497e-14,
+            "hermiticity_error": 3.996691761046554e-15,
+            "minimum_eigenvalue": 1.0943522050669229e-09
+          },
+          "8": {
+            "trace_error": 2.0872193604341474e-14,
+            "hermiticity_error": 2.7209424236115014e-15,
+            "minimum_eigenvalue": 1.09453024398299e-09
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.3489672539999447,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_1_7500_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 47,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "46f7a376080276a168cd9ba5060d7c502add9da119b4bdc6c41a824c943b8fac",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.8297108073106472e-07,
+            "maximum_leakage_error": 5.795515893401167e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.575942857965032e-08,
+            "maximum_leakage_error": 1.4477654219139356e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.2524703496552547e-15,
+          "maximum_gradient_error": 5.403663627667754e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.7985614660844654e-14,
+            "hermiticity_error": 3.983164117463953e-15,
+            "minimum_eigenvalue": 5.449663440421496e-10
+          },
+          "8": {
+            "trace_error": 1.576516714450272e-14,
+            "hermiticity_error": 4.991954501276878e-15,
+            "minimum_eigenvalue": 5.450354566531548e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.915408915999251,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_1_7500_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 47,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "30897d435d6d535fe066022a6b36edae3f3325e6c271387189f3a475751ad101",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 2.4259966602269145e-07,
+            "maximum_leakage_error": 5.709314791639867e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 6.060197021984237e-08,
+            "maximum_leakage_error": 1.4271056726783968e-08
+          }
+        },
+        "gradient": {
+          "objective_error": 4.0679265511656126e-16,
+          "maximum_gradient_error": 5.230191280070073e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 2.553513158420794e-14,
+            "hermiticity_error": 3.5120659894540738e-15,
+            "minimum_eigenvalue": 7.21120694785998e-10
+          },
+          "8": {
+            "trace_error": 2.2870594395573564e-14,
+            "hermiticity_error": 3.919333118969288e-15,
+            "minimum_eigenvalue": 7.212053547237642e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.869266208999761,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_1_7501_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 95,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "0b38198ba91c03364fbd4cb4d285511d38f4042241a1a0e9cef176747b9d3453",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.6243914147118232e-07,
+            "maximum_leakage_error": 1.1761418416839369e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 4.059984193283128e-08,
+            "maximum_leakage_error": 2.934978650936395e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 2.0595504468534642e-15,
+          "maximum_gradient_error": 3.0878077872387166e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.5321078155787703e-14,
+            "hermiticity_error": 5.264593514185232e-15,
+            "minimum_eigenvalue": 1.1914859461778717e-09
+          },
+          "8": {
+            "trace_error": 2.420286470803495e-14,
+            "hermiticity_error": 5.05482337468477e-15,
+            "minimum_eigenvalue": 1.1916975617738072e-09
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.2990814929999033,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_1_7501_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 47,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "eb27230aef3c5bd9001e7873bb3035df5b26acec9f7156d32ed3b299daad4531",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.83570083134299e-07,
+            "maximum_leakage_error": 4.639498698758823e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.591513880214393e-08,
+            "maximum_leakage_error": 1.1596530544000065e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 2.753006156375193e-15,
+          "maximum_gradient_error": 6.392456008974534e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 2.3314693091983508e-14,
+            "hermiticity_error": 5.993659815622935e-15,
+            "minimum_eigenvalue": 5.367583929994958e-10
+          },
+          "8": {
+            "trace_error": 1.9095836024441818e-14,
+            "hermiticity_error": 3.3761345704603783e-15,
+            "minimum_eigenvalue": 5.368269459798463e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8447212890005176,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_1_7501_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 47,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "30897d435d6d535fe066022a6b36edae3f3325e6c271387189f3a475751ad101",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 2.4259966602269145e-07,
+            "maximum_leakage_error": 5.709314791639867e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 6.060197021984237e-08,
+            "maximum_leakage_error": 1.4271056726783968e-08
+          }
+        },
+        "gradient": {
+          "objective_error": 4.0679265511656126e-16,
+          "maximum_gradient_error": 5.230191280070073e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 2.553513158420794e-14,
+            "hermiticity_error": 3.5120659894540738e-15,
+            "minimum_eigenvalue": 7.21120694785998e-10
+          },
+          "8": {
+            "trace_error": 2.2870594395573564e-14,
+            "hermiticity_error": 3.919333118969288e-15,
+            "minimum_eigenvalue": 7.212053547237642e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.945983854999213,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_1_7502_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 95,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "fcba5a0d24778ead0aa8d2b8094dc5206cb4fab9c8c737d4adb1a5fb23093ee6",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7001250962600523e-07,
+            "maximum_leakage_error": 2.1469678205499553e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 4.257251651207383e-08,
+            "maximum_leakage_error": 5.3693961297098945e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 3.209238430557093e-16,
+          "maximum_gradient_error": 5.527940301688905e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.0658151886640213e-14,
+            "hermiticity_error": 4.254325342692776e-15,
+            "minimum_eigenvalue": 1.0788381482831935e-09
+          },
+          "8": {
+            "trace_error": 1.9761969910005736e-14,
+            "hermiticity_error": 3.320645319211816e-15,
+            "minimum_eigenvalue": 1.079011128636754e-09
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.324739137000506,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_1_7502_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 47,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "d9dae9bb11302ab807edf15d44e4acdd9fa2a8efe1fbb71cf59191b71639e0b4",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 2.7300731708646e-07,
+            "maximum_leakage_error": 5.909334357704298e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 6.840423938392348e-08,
+            "maximum_leakage_error": 1.477181004323454e-08
+          }
+        },
+        "gradient": {
+          "objective_error": 3.4573038876217765e-15,
+          "maximum_gradient_error": 6.323067069935462e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.2434498521918278e-14,
+            "hermiticity_error": 3.365614025120241e-15,
+            "minimum_eigenvalue": 5.568972996321174e-10
+          },
+          "8": {
+            "trace_error": 2.0650148294623494e-14,
+            "hermiticity_error": 3.866113933378663e-15,
+            "minimum_eigenvalue": 5.569604874536777e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.881738262998624,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_passes_1_7502_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 47,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "30897d435d6d535fe066022a6b36edae3f3325e6c271387189f3a475751ad101",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 2.4259966602269145e-07,
+            "maximum_leakage_error": 5.709314791639867e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 6.060197021984237e-08,
+            "maximum_leakage_error": 1.4271056726783968e-08
+          }
+        },
+        "gradient": {
+          "objective_error": 4.0679265511656126e-16,
+          "maximum_gradient_error": 5.230191280070073e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 2.553513158420794e-14,
+            "hermiticity_error": 3.5120659894540738e-15,
+            "minimum_eigenvalue": 7.21120694785998e-10
+          },
+          "8": {
+            "trace_error": 2.2870594395573564e-14,
+            "hermiticity_error": 3.919333118969288e-15,
+            "minimum_eigenvalue": 7.212053547237642e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8177554609992512,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_0_7500_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 21,
+      "counted_without_completed_trace": 1,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "bef5adb160e58292123eea7f0cef59f2a0a9894c834c635282ac5ab164c8a56b",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7195280244131084e-07,
+            "maximum_leakage_error": 6.4054227759033876e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.299424416487341e-08,
+            "maximum_leakage_error": 1.6009633596174863e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 4.0722633598555547e-16,
+          "maximum_gradient_error": 1.5495959550249072e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.2101533971071174e-14,
+            "hermiticity_error": 5.283053017847991e-15,
+            "minimum_eigenvalue": 5.427350346296762e-10
+          },
+          "8": {
+            "trace_error": 3.019806746160017e-14,
+            "hermiticity_error": 3.956939666981143e-15,
+            "minimum_eigenvalue": 5.428085202981766e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.367206132999854,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_0_7500_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 18,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "2fab8acdbc4a182f042374bffb1f8fb16b8fe54bb5fa6d3d3561083881ed0052",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.745360264093776e-07,
+            "maximum_leakage_error": 4.8756928534509866e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.366663797217285e-08,
+            "maximum_leakage_error": 1.2207626217067432e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 6.897260540483785e-15,
+          "maximum_gradient_error": 5.447031714567174e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 2.0428105586473366e-14,
+            "hermiticity_error": 6.593803746695421e-15,
+            "minimum_eigenvalue": 5.416335279766167e-10
+          },
+          "8": {
+            "trace_error": 2.5979218790851942e-14,
+            "hermiticity_error": 5.630145299210834e-15,
+            "minimum_eigenvalue": 5.417046734745566e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8643678479998016,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_0_7500_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 16,
+      "counted_without_completed_trace": 1,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "1a6e179371e8f70befd30c602646e29378ec1a62a4905e40d02f77d641999d8e",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7999738566309986e-07,
+            "maximum_leakage_error": 7.617921194794536e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.500692218911695e-08,
+            "maximum_leakage_error": 1.905275826536134e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 3.3046482217358175e-15,
+          "maximum_gradient_error": 4.36282954208167e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.376676604009806e-14,
+            "hermiticity_error": 5.420629687166376e-15,
+            "minimum_eigenvalue": 5.288158311938862e-10
+          },
+          "8": {
+            "trace_error": 2.442490657839711e-14,
+            "hermiticity_error": 7.0651133614240536e-15,
+            "minimum_eigenvalue": 5.28883569123806e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8665568999999778,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_0_7501_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 22,
+      "counted_without_completed_trace": 1,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "374d17ab10a3f1c3a173a4ced7a33b12ba7b7027810d51741f57d7115e9396df",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7176988953426786e-07,
+            "maximum_leakage_error": 6.754457199079794e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.296577860163353e-08,
+            "maximum_leakage_error": 1.6895568073131782e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 2.258609965721803e-15,
+          "maximum_gradient_error": 3.574614562684708e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 8.548717568013624e-15,
+            "hermiticity_error": 2.0651458585532654e-15,
+            "minimum_eigenvalue": 5.509890755866871e-10
+          },
+          "8": {
+            "trace_error": 2.4424906547321174e-14,
+            "hermiticity_error": 5.465054784632005e-15,
+            "minimum_eigenvalue": 5.510639376583578e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.31866754199973,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_0_7501_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 18,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "2a8954ba4aabe41bfe8dc83b7e4c82cab8b8a90cc7f411595a258a90a0042096",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7254420514589697e-07,
+            "maximum_leakage_error": 7.06790739448532e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.3160479745729674e-08,
+            "maximum_leakage_error": 1.7625428115367547e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 6.92154666914746e-16,
+          "maximum_gradient_error": 3.86843335142828e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 8.65973960843824e-15,
+            "hermiticity_error": 2.5286700580672365e-15,
+            "minimum_eigenvalue": 5.397913228150203e-10
+          },
+          "8": {
+            "trace_error": 2.6423316383265845e-14,
+            "hermiticity_error": 2.3872122232988786e-15,
+            "minimum_eigenvalue": 5.398636486047674e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.863619186000051,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_0_7501_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 16,
+      "counted_without_completed_trace": 1,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "0eb8826780d8e50e49d784b26825f1c5fa3111ae2dfb50dc940f07efa1f6b0b6",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.6950387704550707e-07,
+            "maximum_leakage_error": 6.2815306723332145e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.242030582357614e-08,
+            "maximum_leakage_error": 1.5712370662471556e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 6.349087922075114e-16,
+          "maximum_gradient_error": 4.44956571588051e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.4432918009005844e-14,
+            "hermiticity_error": 2.951837987462567e-15,
+            "minimum_eigenvalue": 5.428689658659267e-10
+          },
+          "8": {
+            "trace_error": 2.0206061366234345e-14,
+            "hermiticity_error": 6.804798203406203e-15,
+            "minimum_eigenvalue": 5.429421872186301e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8854304900000898,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_0_7502_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 22,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "d7251987399fbdee7efc5bcef6900c32bb148d613b1cb8f71774769b27d27d9b",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7390952355977873e-07,
+            "maximum_leakage_error": 7.605054270149781e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.348983795310346e-08,
+            "maximum_leakage_error": 1.9003198528553752e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.2893332235197619e-15,
+          "maximum_gradient_error": 2.9444220499275087e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.1768364200025169e-14,
+            "hermiticity_error": 5.261643080744191e-15,
+            "minimum_eigenvalue": 5.389615619396741e-10
+          },
+          "8": {
+            "trace_error": 2.2426505917032147e-14,
+            "hermiticity_error": 3.1986720415755647e-15,
+            "minimum_eigenvalue": 5.390338929282978e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.3164295760007008,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_0_7502_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 18,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "6c8901e3972bc4f3bfb209d5973b47093b6308707d5e8ea3794ed9c1c59286c0",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7698055587711536e-07,
+            "maximum_leakage_error": 5.22501925893351e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.4214940597697705e-08,
+            "maximum_leakage_error": 1.3055438035850095e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 5.082739784612045e-16,
+          "maximum_gradient_error": 3.694961003830599e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.0658141036402203e-14,
+            "hermiticity_error": 2.5833368273728743e-15,
+            "minimum_eigenvalue": 5.397789186690047e-10
+          },
+          "8": {
+            "trace_error": 1.8651746893014327e-14,
+            "hermiticity_error": 4.698896812490463e-15,
+            "minimum_eigenvalue": 5.398503131273143e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.9456539669999984,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_0_7502_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 16,
+      "counted_without_completed_trace": 1,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "0eb8826780d8e50e49d784b26825f1c5fa3111ae2dfb50dc940f07efa1f6b0b6",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.6950387704550707e-07,
+            "maximum_leakage_error": 6.2815306723332145e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.242030582357614e-08,
+            "maximum_leakage_error": 1.5712370662471556e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 6.349087922075114e-16,
+          "maximum_gradient_error": 4.44956571588051e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.4432918009005844e-14,
+            "hermiticity_error": 2.951837987462567e-15,
+            "minimum_eigenvalue": 5.428689658659267e-10
+          },
+          "8": {
+            "trace_error": 2.0206061366234345e-14,
+            "hermiticity_error": 6.804798203406203e-15,
+            "minimum_eigenvalue": 5.429421872186301e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.931990720000613,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_1_7500_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 45,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "1e90ff8e7320c62823d5f6d97aa2acf7eae024d55b84d8c35dd40fc10c6f3901",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.832957950975711e-07,
+            "maximum_leakage_error": 5.945185256692621e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.6005793064018974e-08,
+            "maximum_leakage_error": 1.4832557680461052e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.059482362952835e-15,
+          "maximum_gradient_error": 2.666595243228098e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.2323477740838162e-14,
+            "hermiticity_error": 1.934880730341863e-15,
+            "minimum_eigenvalue": 5.412849361621495e-10
+          },
+          "8": {
+            "trace_error": 1.798561579508707e-14,
+            "hermiticity_error": 4.537603864682459e-15,
+            "minimum_eigenvalue": 5.413518375154353e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.3701521470002263,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_1_7500_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 36,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "c0c2c7fdd5bcc3bd1f2e1dc8a7a6e742fe6efadfe9103dbce2ffd58a97f21f02",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7835778587382833e-07,
+            "maximum_leakage_error": 5.4319912407467606e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.4648436947625214e-08,
+            "maximum_leakage_error": 1.3571242484936355e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 2.949029909160572e-17,
+          "maximum_gradient_error": 2.6116062437631093e-12,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.5987213390039798e-14,
+            "hermiticity_error": 5.175641851869269e-15,
+            "minimum_eigenvalue": 5.351491428982676e-10
+          },
+          "8": {
+            "trace_error": 2.3536728819106106e-14,
+            "hermiticity_error": 3.79476819462837e-15,
+            "minimum_eigenvalue": 5.352180159840338e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.9255376849996537,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_1_7500_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 32,
+      "counted_without_completed_trace": 3,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "03efbc40aa2a39e7de93a2a514e2f2971a5ffc39c3cbe59cdee21fc90b07c0cc",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 2.064079257513285e-07,
+            "maximum_leakage_error": 1.0712805301357731e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 5.159099403240219e-08,
+            "maximum_leakage_error": 2.6790401822926935e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.0026701691145945e-15,
+          "maximum_gradient_error": 5.915407053080912e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.3322688551932754e-14,
+            "hermiticity_error": 2.6980397915207735e-15,
+            "minimum_eigenvalue": 5.500522255817936e-10
+          },
+          "8": {
+            "trace_error": 1.443289984906509e-14,
+            "hermiticity_error": 5.20180873147733e-15,
+            "minimum_eigenvalue": 5.5011481317481e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 3.0954832429997623,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_1_7501_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 44,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "9f1ca701d90d59a0a6d7aee5e546114d12dbc39f632da46a7228d27af67a7032",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.793885017198349e-07,
+            "maximum_leakage_error": 2.3336984988439765e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.4872640714288536e-08,
+            "maximum_leakage_error": 5.833571710474219e-10
+          }
+        },
+        "gradient": {
+          "objective_error": 2.8536201179818477e-16,
+          "maximum_gradient_error": 3.002155815612362e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.4654944959489104e-14,
+            "hermiticity_error": 1.861987896435023e-15,
+            "minimum_eigenvalue": 5.421850787914601e-10
+          },
+          "8": {
+            "trace_error": 2.6645352915507077e-14,
+            "hermiticity_error": 3.2633290744884725e-15,
+            "minimum_eigenvalue": 5.422528268910582e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.3708098090010026,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_1_7501_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 36,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "dc5cf15e6a7df08df385eab0668363159da7a7bb2a5bbec4b126a9dda6670c6a",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7988339739982706e-07,
+            "maximum_leakage_error": 5.415661443552126e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.494110328323586e-08,
+            "maximum_leakage_error": 1.3539977905557441e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 7.476658181460039e-16,
+          "maximum_gradient_error": 4.388850394221322e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.1324276515799484e-14,
+            "hermiticity_error": 3.3084926528964607e-15,
+            "minimum_eigenvalue": 5.28827945104926e-10
+          },
+          "8": {
+            "trace_error": 1.9984015205950678e-14,
+            "hermiticity_error": 4.927227265231189e-15,
+            "minimum_eigenvalue": 5.28895797472273e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.940129763999721,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_1_7501_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 32,
+      "counted_without_completed_trace": 3,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "03efbc40aa2a39e7de93a2a514e2f2971a5ffc39c3cbe59cdee21fc90b07c0cc",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 2.064079257513285e-07,
+            "maximum_leakage_error": 1.0712805301357731e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 5.159099403240219e-08,
+            "maximum_leakage_error": 2.6790401822926935e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.0026701691145945e-15,
+          "maximum_gradient_error": 5.915407053080912e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.3322688551932754e-14,
+            "hermiticity_error": 2.6980397915207735e-15,
+            "minimum_eigenvalue": 5.500522255817936e-10
+          },
+          "8": {
+            "trace_error": 1.443289984906509e-14,
+            "hermiticity_error": 5.20180873147733e-15,
+            "minimum_eigenvalue": 5.5011481317481e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8909749150006974,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_1_7502_conventional": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 46,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "c10ee9ffadef6b447d6050b4ba9277a5f196e956919e41dffed3f77ec49dca81",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.8067157936396683e-07,
+            "maximum_leakage_error": 2.08001939578376e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.528380215251815e-08,
+            "maximum_leakage_error": 5.183564711192217e-10
+          }
+        },
+        "gradient": {
+          "objective_error": 1.0607834055598175e-15,
+          "maximum_gradient_error": 3.174543961037557e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.2656542664127308e-14,
+            "hermiticity_error": 4.1159120875824986e-15,
+            "minimum_eigenvalue": 5.356028829426741e-10
+          },
+          "8": {
+            "trace_error": 1.6209256190777348e-14,
+            "hermiticity_error": 2.8360628300943013e-15,
+            "minimum_eigenvalue": 5.356688905225307e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.2583017079996353,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_1_7502_risk": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 37,
+      "counted_without_completed_trace": 0,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "2bd5fcf5862392ec672f6858096300c45d453e11d946942daefac124cb05baf8",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 1.7739724889054287e-07,
+            "maximum_leakage_error": 5.687663280730051e-09
+          },
+          "8": {
+            "maximum_fidelity_error": 4.424289445914553e-08,
+            "maximum_leakage_error": 1.4204859667366835e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 4.85722573273506e-17,
+          "maximum_gradient_error": 4.597017211338539e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.065816226818081e-14,
+            "hermiticity_error": 5.121756813056646e-15,
+            "minimum_eigenvalue": 5.374292609266647e-10
+          },
+          "8": {
+            "trace_error": 2.7755576307252747e-14,
+            "hermiticity_error": 4.616474971695018e-15,
+            "minimum_eigenvalue": 5.374994211515407e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8383735150000575,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    },
+    "trial_equal_wall_1_7502_continuation": {
+      "checks": {
+        "waveform_hash": true,
+        "optimization_checkpoint": true,
+        "protocol_settings": true,
+        "budget_level": true,
+        "pass_ledger": true,
+        "trace_not_overcounted": true,
+        "iteration_guard_nonbinding": true,
+        "hard_cap": true,
+        "gpu_time_scope": true,
+        "physical_constraints": true,
+        "nominal_qualified": true,
+        "numerical_accuracy": true,
+        "selection_aggregation": true
+      },
+      "passed": true,
+      "traced_evaluations": 32,
+      "counted_without_completed_trace": 4,
+      "numerical": {
+        "passed": true,
+        "waveform_sha256": "03efbc40aa2a39e7de93a2a514e2f2971a5ffc39c3cbe59cdee21fc90b07c0cc",
+        "nominal_reproduction_error": 0.0,
+        "interpolation_checks": {
+          "4": {
+            "maximum_fidelity_error": 2.064079257513285e-07,
+            "maximum_leakage_error": 1.0712805301357731e-08
+          },
+          "8": {
+            "maximum_fidelity_error": 5.159099403240219e-08,
+            "maximum_leakage_error": 2.6790401822926935e-09
+          }
+        },
+        "gradient": {
+          "objective_error": 1.0026701691145945e-15,
+          "maximum_gradient_error": 5.915407053080912e-16,
+          "passed": true
+        },
+        "physical_states": {
+          "4": {
+            "trace_error": 1.3322688551932754e-14,
+            "hermiticity_error": 2.6980397915207735e-15,
+            "minimum_eigenvalue": 5.500522255817936e-10
+          },
+          "8": {
+            "trace_error": 1.443289984906509e-14,
+            "hermiticity_error": 5.20180873147733e-15,
+            "minimum_eigenvalue": 5.5011481317481e-10
+          }
+        },
+        "constraints_passed": true,
+        "verification_seconds": 2.8631441150009778,
+        "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+      }
+    }
+  },
+  "inherited_finite_difference_validation": {
+    "objective_algebra": {
+      "scenarios": 100,
+      "distinct_infidelities": 100,
+      "objective_formula": "mean(1-fidelity) + lambda*smooth_CVaR95(1-fidelity) + mu*mean(leakage) + regularization",
+      "objective_formula_error": 0.0,
+      "regularization": 6.066666666666667e-06,
+      "all_control_gradient_max_absolute_error": 7.75519383953982e-12,
+      "lambda_objective_error": 1.3877787807814457e-17,
+      "lambda_gradient_error": 8.673617379884035e-19,
+      "mu_objective_error": 6.3696877633523385e-18,
+      "mu_gradient_error": 1.9312351197398048e-19,
+      "risk_derivatives_nonnegative": true,
+      "larger_infidelity_has_larger_risk_derivative": true,
+      "higher_infidelity_increases_risk": true,
+      "exact_cvar": 0.02941414141414141,
+      "smoothed_cvar": 0.03238724330468303,
+      "smoothing_gap": 0.002973101890541622,
+      "smoothing_bound": 0.02772588722239779,
+      "passed": true
+    },
+    "conventional": {
+      "scenarios": 100,
+      "substeps": 4,
+      "value": 0.0016986453029276443,
+      "analytic": -0.013238270292631374,
+      "finite_difference": -0.013238270260887938,
+      "error": 3.1743436004760817e-11,
+      "passed": true
+    },
+    "risk": {
+      "scenarios": 100,
+      "substeps": 4,
+      "value": 0.004821055319112364,
+      "analytic": -0.020791546677161744,
+      "finite_difference": -0.020791546777917252,
+      "error": 1.0075550810340062e-10,
+      "passed": true
+    }
+  },
+  "finite_difference_scope": "Inherited 100 saved training-device directional checks; numerical/model sources unchanged. New final-waveform checks compare CPU/GPU analytic gradients on three cases, not a new 100-device finite-difference campaign.",
+  "scope": "Every completed waveform: nominal and two saved deterministic training stress cases; CPU production vs GPU FP64 at 4/8 substeps, gradients, physicality. Not all 200 devices, not new validation, not a Hilbert-level convergence proof."
+}

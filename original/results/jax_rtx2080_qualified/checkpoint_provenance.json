@@ -1,0 +1,291 @@
+{
+  "origin": "results/jax_rtx2080_benchmark",
+  "original_protocol": {
+    "config": {
+      "base_config": "challenge_config.json",
+      "scenario_counts": [
+        1,
+        10,
+        100,
+        500,
+        1000,
+        2000
+      ],
+      "precisions": [
+        "float32",
+        "float64"
+      ],
+      "scenario_seed": 88100,
+      "direction_seed": 88101,
+      "substeps": 4,
+      "batch_size": 32,
+      "max_vram_gb": 8.0,
+      "memory_fraction": 0.7,
+      "repetitions": 1,
+      "gradient_validation_scenarios": 100,
+      "benchmark_cpu_gradients": true,
+      "include_jax_cpu": true
+    },
+    "base_config": {
+      "device": {
+        "alpha_mhz": -220.0,
+        "t1_1_ns": 30000.0,
+        "t1_2_ns": 18000.0,
+        "tphi_1_ns": 40000.0,
+        "tphi_2_ns": 25000.0,
+        "dt_ns": 0.2,
+        "amplitude_limit_mhz": 80.0,
+        "detuning_mhz": 0.0,
+        "levels": 5
+      },
+      "bounds": [
+        [
+          0.15,
+          0.5
+        ],
+        [
+          -1.0,
+          2.0
+        ],
+        [
+          0.85,
+          1.15
+        ],
+        [
+          -8.0,
+          8.0
+        ]
+      ],
+      "monte_carlo_samples": 2000,
+      "mc_selection_samples": 200,
+      "mc_selection_candidates": 12,
+      "mc_selection_seed": 2028,
+      "mc_selection_criterion": "cvar95_infidelity",
+      "manufacturing_ranges": {
+        "amplitude_fraction": 0.03,
+        "detuning_mhz": 3.0,
+        "alpha_shift_mhz": 8.0
+      },
+      "mc_seed": 2029,
+      "coherence_min": 0.8,
+      "amplitude_headroom_scale": 1.03,
+      "selection_weights": {
+        "mean_infidelity": 1.0,
+        "worst_infidelity": 0.5,
+        "worst_leakage": 2.0
+      },
+      "search_seeds": [
+        7,
+        17,
+        27,
+        37,
+        47
+      ],
+      "quality_targets": {
+        "nominal_fidelity_min": 0.999,
+        "leakage_max": 0.0001,
+        "p05_validation_lcb_min": 0.995,
+        "solver_metric_tolerance": 2e-06
+      },
+      "gate_duration_ns": 15.6,
+      "grape": {
+        "enabled": true,
+        "iterations": 40,
+        "samples": 8,
+        "seed": 2030,
+        "substeps": 4,
+        "tail_fraction": 0.1,
+        "leakage_weight": 2.0,
+        "smoothness_weight": 0.001,
+        "harmonics": 5,
+        "restarts": 2,
+        "restart_scale": 0.08,
+        "tail_weight": 0.0,
+        "amplitude_grid_points": 3,
+        "detuning_grid_points": 5,
+        "ftol": 1e-09
+      },
+      "pulse_methods": {
+        "sigma_fraction": 0.3,
+        "amplitude_scale": 1.0,
+        "beta": 0.5,
+        "hermite_h2": 0.5,
+        "wah_modulation_depth": 0.3,
+        "wah_modulation_frequency_mhz": 25.0,
+        "bb1_edge_fraction": 0.1
+      },
+      "calibration": {
+        "enabled": true,
+        "max_evaluations": 180
+      },
+      "truncation": {
+        "metric_tolerance": 2e-06
+      },
+      "nelder_mead": {
+        "enabled": true,
+        "max_evaluations": 500,
+        "xatol": 1e-05,
+        "fatol": 1e-10
+      },
+      "random_search": {
+        "enabled": false,
+        "max_evaluations": 500
+      },
+      "training": {},
+      "worst_case": {
+        "enabled": true,
+        "max_evaluations": 200,
+        "seeds": [
+          2041,
+          2042
+        ],
+        "axis_points": 5,
+        "xatol": 0.001,
+        "fatol": 1e-08,
+        "fidelity_min": null
+      },
+      "risk_aware_grape": {
+        "enabled": true,
+        "alpha": 0.95,
+        "risk_weight": 1.0,
+        "leakage_weight": 2.0,
+        "smoothing": 1e-06,
+        "training_samples": 32,
+        "training_seed": 2050,
+        "optimizer_seeds": [
+          2030,
+          2031
+        ]
+      }
+    },
+    "sources": {
+      "jax_backend.py": "5e5ff6a9759898ab78773794c033900e4fab241202a104c066156b02940ff4b0",
+      "jax_benchmark.py": "725a834192867b8389e508f90cefff77d12fc0d171793778e5fcb244728264d6",
+      "grape.py": "bcc188444a1c54704e1a86f7437cca8affa271903b90e9f4b477079f1362a508",
+      "risk_aware_grape.py": "80183fc27e5198a465076085f17e0bca9222bf112f336a6c471b7bbc9865ee50",
+      "challenge_model.py": "a179d7b9c47aefbbd9902252d9d04e7c5da8a1ae584367be7081a07eb43ce85a"
+    },
+    "purpose": "backend_numerical_benchmark_not_statistical_validation",
+    "certification_backend": "cpu_qutip"
+  },
+  "original_environment": {
+    "nvidia_smi": {
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 2080 SUPER, 8192 MiB, 7580 MiB, 580.178.04",
+      "stderr": ""
+    },
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "packages": {
+      "numpy": "2.5.2",
+      "scipy": "1.17.1",
+      "qutip": "5.3.1",
+      "jax": "0.12.0.1",
+      "jaxlib": "0.12.0.1"
+    },
+    "environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "XLA_FLAGS": "--xla_cpu_multi_thread_eigen=false",
+      "XLA_PYTHON_CLIENT_PREALLOCATE": "false"
+    }
+  },
+  "copied_cases": [
+    {
+      "file": "cpu_gradient_conventional_2000.json",
+      "sha256": "764203e185988777cb026a7266c9658cf13c7d0bc0a410552a727983da22da28"
+    },
+    {
+      "file": "cpu_gradient_risk_2000.json",
+      "sha256": "7363c8236be8a170e3c3084699a2ecc99c02af660c087d90c3bf936efb3597c3"
+    },
+    {
+      "file": "cpu_gradient_conventional_10.json",
+      "sha256": "73df76186a78f1274acea250125635c16bb6aef1c9e033f6172c9944debf92a1"
+    },
+    {
+      "file": "cpu_gradient_risk_100.json",
+      "sha256": "e6d997e4e5dfb4f6cdad53ee892e02503148e9aac9ef49cda23fcf5f19b8efc4"
+    },
+    {
+      "file": "cpu_gradient_risk_10.json",
+      "sha256": "376d07a5530f9c09cf15598337f594da29acd63f78798760b586ec1f690cb7f3"
+    },
+    {
+      "file": "cpu_gradient_conventional_1.json",
+      "sha256": "13a68173e134c354442997f3eac0a2af949c51b8896398c8952e51d2ed156a0f"
+    },
+    {
+      "file": "cpu_gradient_risk_1000.json",
+      "sha256": "2a1c83cd27160f8cca5dce7755d0eb24307400e199001f253c0f7d9ddd01ac46"
+    },
+    {
+      "file": "cpu_gradient_conventional_100.json",
+      "sha256": "c5744e86b107766433c614e45d535e6f4999f8f7546448325fc401d745724a6f"
+    },
+    {
+      "file": "cpu_gradient_risk_1.json",
+      "sha256": "067b03abdabfaeeb74192fd2fd11fe97634d13b0a337ba50137b67eb44e7f6eb"
+    },
+    {
+      "file": "cpu_gradient_risk_500.json",
+      "sha256": "71f23f34d71c733f58616398a760b9972ac54350633ee9d30606538cbe692bea"
+    },
+    {
+      "file": "cpu_gradient_conventional_500.json",
+      "sha256": "32cb684c8299bcf3c697c9ead92b2f2a33308740927c1c9de3571f0540baba9e"
+    },
+    {
+      "file": "cpu_gradient_conventional_1000.json",
+      "sha256": "8baa2a517924a9c4ca5bb1e4e4713eb7e58066bd360f8d683ee2cf53838ec964"
+    },
+    {
+      "file": "cpu_qutip_500.json",
+      "sha256": "5c30d3e3745420f1c1a3b5986e0cd9976525b8d2e551b271ff44a697ad602c6e"
+    },
+    {
+      "file": "cpu_qutip_1000.json",
+      "sha256": "bdf9854a9bfaf576537dfbfd723406543a3a78dc8f729359b8fc5e559826c535"
+    },
+    {
+      "file": "cpu_qutip_2000.json",
+      "sha256": "adb0c7a014afa33539a0e3f6a84906ffc1dfd6abdae21428f0c5c0cd35bae76b"
+    },
+    {
+      "file": "jax_cpu_float32_risk_gradient_100.json",
+      "sha256": "37605f4544648c8781f7123007f1c907dc19faf3cc20be03aba20d741b753ee8"
+    },
+    {
+      "file": "jax_cpu_float32_conventional_gradient_10.json",
+      "sha256": "f9442b065e76aa08116fafe66d73d463bf0441c2d0260b0ad210a1e924162619"
+    },
+    {
+      "file": "jax_cpu_float32_risk_gradient_1.json",
+      "sha256": "f1df19904733258b4177641de1b563c1d94a9ec063567c24309240f4081103a9"
+    },
+    {
+      "file": "jax_cpu_float32_forward_1.json",
+      "sha256": "42ccff5d3e5f127d01f89a4c537d8cc689aba2f422e0bb9a2fb8cb57587f3c12"
+    },
+    {
+      "file": "jax_cpu_float32_forward_100.json",
+      "sha256": "ee86d416aee859c314c1428af40fc60e87e626c26753c800edc6e6ce5cc7c258"
+    },
+    {
+      "file": "jax_cpu_float32_risk_gradient_10.json",
+      "sha256": "358ab76418638cc8a06916dd2cdd577bd16aaf54a2fe11f9f6faa2347fa128d7"
+    },
+    {
+      "file": "jax_cpu_float32_forward_10.json",
+      "sha256": "06a5362bebe5b7d42d7a38f740f9046a8762bf161fd7fc47675a7a9840e1d84f"
+    },
+    {
+      "file": "jax_cpu_float32_conventional_gradient_100.json",
+      "sha256": "dada4cdf4aba0694c4e8c55a477fe29ddf6c81803026f07fdd30cf2e902b4948"
+    },
+    {
+      "file": "jax_cpu_float32_conventional_gradient_1.json",
+      "sha256": "14c8945e8203ad3b2d4cc0227de57db4d069a217f8160d0c4b75853eb831b8fd"
+    }
+  ],
+  "reason": "Preserve all isolated CPU reference cases and completed small JAX-CPU controls; limit optional matched control sizes after measuring high runtime. Core physics/gradient kernels, waveform, distributions, seeds, substeps and timing operations unchanged. CPU forward sizes 1,10,100 are rerun to eliminate early preliminary-worker overlap."
+}

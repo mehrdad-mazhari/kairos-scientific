@@ -1,0 +1,44 @@
+{
+  "first_call_seconds": 0.5098377090002941,
+  "warm_seconds": 0.08991622599978655,
+  "repetitions": 1,
+  "process_rss_peak_bytes": 1705783296,
+  "model_setup_seconds": 1.489411114000177,
+  "diagnostics": {
+    "requested_backend": "jax_gpu",
+    "actual_backend": "jax_gpu",
+    "platform": "gpu",
+    "device": "NVIDIA GeForce RTX 2080 SUPER",
+    "precision": "float32",
+    "gpu_qualified": false,
+    "oom_reductions": 0,
+    "forward_scenario_passes": 2,
+    "adjoint_scenario_passes": 0,
+    "padded_forward_scenario_passes": 2,
+    "batch_size": 32,
+    "estimated_bytes_per_scenario": 16130200,
+    "memory_budget_bytes": 6012954214,
+    "kernel_cache_hit": false,
+    "last_execution_batch_size": 1,
+    "memory_stats": {
+      "num_allocs": 700,
+      "bytes_in_use": 8960,
+      "peak_bytes_in_use": 104912896,
+      "largest_alloc_size": 33554432,
+      "bytes_limit": 6121586688,
+      "bytes_reserved": 0,
+      "peak_bytes_reserved": 0,
+      "largest_free_block_bytes": 67108864,
+      "pool_bytes": 136314880,
+      "peak_pool_bytes": 136314880
+    }
+  },
+  "value": null,
+  "metrics": [
+    [
+      0.0015393495559692383,
+      4.153846384724602e-05
+    ]
+  ],
+  "gradient": null
+}

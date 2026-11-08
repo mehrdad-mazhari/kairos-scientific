@@ -1,0 +1,40 @@
+{
+  "objective_algebra": {
+    "scenarios": 100,
+    "distinct_infidelities": 100,
+    "objective_formula": "mean(1-fidelity) + lambda*smooth_CVaR95(1-fidelity) + mu*mean(leakage) + regularization",
+    "objective_formula_error": 0.0,
+    "regularization": 6.066666666666667e-06,
+    "all_control_gradient_max_absolute_error": 7.75519383953982e-12,
+    "lambda_objective_error": 1.3877787807814457e-17,
+    "lambda_gradient_error": 8.673617379884035e-19,
+    "mu_objective_error": 6.3696877633523385e-18,
+    "mu_gradient_error": 1.9312351197398048e-19,
+    "risk_derivatives_nonnegative": true,
+    "larger_infidelity_has_larger_risk_derivative": true,
+    "higher_infidelity_increases_risk": true,
+    "exact_cvar": 0.02941414141414141,
+    "smoothed_cvar": 0.03238724330468303,
+    "smoothing_gap": 0.002973101890541622,
+    "smoothing_bound": 0.02772588722239779,
+    "passed": true
+  },
+  "conventional": {
+    "scenarios": 100,
+    "substeps": 4,
+    "value": 0.0016986453029276443,
+    "analytic": -0.013238270292631374,
+    "finite_difference": -0.013238270260887938,
+    "error": 3.1743436004760817e-11,
+    "passed": true
+  },
+  "risk": {
+    "scenarios": 100,
+    "substeps": 4,
+    "value": 0.004821055319112364,
+    "analytic": -0.020791546677161744,
+    "finite_difference": -0.020791546777917252,
+    "error": 1.0075550810340062e-10,
+    "passed": true
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "first_call_seconds": 0.7764750119999917,
+  "warm_seconds": 0.48669452800004365,
+  "repetitions": 1,
+  "process_rss_peak_bytes": 1371648000,
+  "model_setup_seconds": 1.2909165409996604,
+  "diagnostics": {
+    "requested_backend": "jax_cpu",
+    "actual_backend": "jax_cpu",
+    "platform": "cpu",
+    "device": "cpu",
+    "precision": "float64",
+    "gpu_qualified": false,
+    "oom_reductions": 0,
+    "forward_scenario_passes": 28,
+    "adjoint_scenario_passes": 4,
+    "padded_forward_scenario_passes": 28,
+    "batch_size": 32,
+    "estimated_bytes_per_scenario": 32260400,
+    "memory_budget_bytes": 6012954214,
+    "kernel_cache_hit": false,
+    "last_execution_batch_size": 10,
+    "memory_stats": {}
+  },
+  "value": null,
+  "metrics": [
+    [
+      0.0015492391471195928,
+      4.112225015672054e-05
+    ],
+    [
+      0.0017384265773348617,
+      4.847520669521664e-05
+    ],
+    [
+      0.000698156273140423,
+      6.0432858249717334e-05
+    ],
+    [
+      0.0007693954629627482,
+      5.0502026556617526e-05
+    ],
+    [
+      0.0019267871771634544,
+      4.788436253135511e-05
+    ],
+    [
+      0.0029036052290209073,
+      4.533778179885751e-05
+    ],
+    [
+      0.0021735477027128485,
+      4.829636030345838e-05
+    ],
+    [
+      0.0009460468410492084,
+      6.317027152614221e-05
+    ],
+    [
+      0.0018443432355998803,
+      4.859389009639007e-05
+    ],
+    [
+      0.0006092937102906704,
+      5.312800904016045e-05
+    ]
+  ],
+  "gradient": null
+}

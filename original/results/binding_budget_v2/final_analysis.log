@@ -1,0 +1,33 @@
+{
+  "decision": "CONDITIONAL GO",
+  "reason": "Complete verified budget-limited study; freeze confirmatory candidates and protocol after development-only Hilbert truncation checks and acknowledging approximate wall matching and timing limitations.",
+  "completed_trials": 54,
+  "required_trials": 54,
+  "complete": true,
+  "missing_trials": [],
+  "integrity_checks": {
+    "frozen_sources": true,
+    "original_experiment_unchanged": true,
+    "training_ensemble_unchanged": true,
+    "selection_ensemble_unchanged": true,
+    "all_optimization_checkpoints_valid": true
+  },
+  "invalid_trials": [],
+  "numerical_checks_passed": true,
+  "converged_trials": 0,
+  "statistical_superiority_established": false,
+  "strongest_feasible_development_method": "conventional",
+  "provisional_feasible_leader": "conventional",
+  "eligible_methods": [
+    "conventional",
+    "risk",
+    "continuation"
+  ],
+  "validation_generated": false,
+  "validation_execution_authorized": false,
+  "actual_cost_comparable_pairs": 54,
+  "pairs_available": 54,
+  "descriptive_cost_tolerance": 0.05,
+  "analysis_rule_timing": "5% comparability tolerance introduced after first three low-call trials were observed; exploratory, not a preregistered hypothesis",
+  "resume_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MPLCONFIGDIR=/tmp/kairos-mpl XLA_PYTHON_CLIENT_PREALLOCATE=false XLA_FLAGS=--xla_cpu_multi_thread_eigen=false .venv/bin/python -u binding_budget_study.py"
+}

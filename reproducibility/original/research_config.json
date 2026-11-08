@@ -1,0 +1,88 @@
+{
+  "base_config": "challenge_config.json",
+  "selection_samples": 200,
+  "validation_samples": 2000,
+  "nm_calls": 500,
+  "nm_seeds": [
+    7,
+    17,
+    27,
+    37,
+    47
+  ],
+  "training_samples": 100,
+  "optimizer_seeds": [
+    6200,
+    6201,
+    6202,
+    6203,
+    6204,
+    6205,
+    6206,
+    6207,
+    6208,
+    6209
+  ],
+  "training_seed": 6100,
+  "selection_seed": 6101,
+  "validation_seed": 6102,
+  "bootstrap_seed": 6300,
+  "bootstrap_repetitions": 2000,
+  "worst_calls": 500,
+  "objective_calls": 1000,
+  "scenario_passes": 220500,
+  "wall_seconds": 1800.0,
+  "regimes": [
+    "equal_evaluations",
+    "equal_wall"
+  ],
+  "lambdas": [
+    0,
+    0.1,
+    0.5,
+    1,
+    2,
+    5
+  ],
+  "mus": [
+    0,
+    2,
+    5
+  ],
+  "mu": 2.0,
+  "smoothing": 1e-06,
+  "iterations": 150,
+  "restarts": 5,
+  "initialization_strategy": "qualified_fourier_multistart",
+  "qualified_perturbation_scale": 0.002,
+  "harmonics": 5,
+  "substeps": 4,
+  "calibration_calls": 180,
+  "map_points": 15,
+  "quick": {
+    "initialization_strategy": "least_squares_radial",
+    "restarts": 1,
+    "initialization_scale": 0.05,
+    "selection_samples": 4,
+    "validation_samples": 8,
+    "nm_calls": 8,
+    "nm_seeds": [
+      7
+    ],
+    "training_samples": 2,
+    "optimizer_seeds": [
+      6200
+    ],
+    "bootstrap_repetitions": 100,
+    "worst_calls": 8,
+    "objective_calls": 3,
+    "scenario_passes": 72,
+    "wall_seconds": 1.0,
+    "iterations": 1,
+    "harmonics": 2,
+    "substeps": 1,
+    "calibration_calls": 5,
+    "map_points": 3
+  },
+  "initialization_scale": 0.0
+}

@@ -1,0 +1,167 @@
+{
+  "levels": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "base_config": {
+    "device": {
+      "alpha_mhz": -220.0,
+      "t1_1_ns": 30000.0,
+      "t1_2_ns": 18000.0,
+      "tphi_1_ns": 40000.0,
+      "tphi_2_ns": 25000.0,
+      "dt_ns": 0.2,
+      "amplitude_limit_mhz": 80.0,
+      "detuning_mhz": 0.0,
+      "levels": 5
+    },
+    "bounds": [
+      [
+        0.15,
+        0.5
+      ],
+      [
+        -1.0,
+        2.0
+      ],
+      [
+        0.85,
+        1.15
+      ],
+      [
+        -8.0,
+        8.0
+      ]
+    ],
+    "monte_carlo_samples": 2000,
+    "mc_selection_samples": 200,
+    "mc_selection_candidates": 12,
+    "mc_selection_seed": 2028,
+    "mc_selection_criterion": "cvar95_infidelity",
+    "manufacturing_ranges": {
+      "amplitude_fraction": 0.03,
+      "detuning_mhz": 3.0,
+      "alpha_shift_mhz": 8.0
+    },
+    "mc_seed": 2029,
+    "coherence_min": 0.8,
+    "amplitude_headroom_scale": 1.03,
+    "selection_weights": {
+      "mean_infidelity": 1.0,
+      "worst_infidelity": 0.5,
+      "worst_leakage": 2.0
+    },
+    "search_seeds": [
+      7,
+      17,
+      27,
+      37,
+      47
+    ],
+    "quality_targets": {
+      "nominal_fidelity_min": 0.999,
+      "leakage_max": 0.0001,
+      "p05_validation_lcb_min": 0.995,
+      "solver_metric_tolerance": 2e-06
+    },
+    "gate_duration_ns": 15.6,
+    "grape": {
+      "enabled": true,
+      "iterations": 40,
+      "samples": 8,
+      "seed": 2030,
+      "substeps": 4,
+      "tail_fraction": 0.1,
+      "leakage_weight": 2.0,
+      "smoothness_weight": 0.001,
+      "harmonics": 5,
+      "restarts": 2,
+      "restart_scale": 0.08,
+      "tail_weight": 0.0,
+      "amplitude_grid_points": 3,
+      "detuning_grid_points": 5,
+      "ftol": 1e-09
+    },
+    "pulse_methods": {
+      "sigma_fraction": 0.3,
+      "amplitude_scale": 1.0,
+      "beta": 0.5,
+      "hermite_h2": 0.5,
+      "wah_modulation_depth": 0.3,
+      "wah_modulation_frequency_mhz": 25.0,
+      "bb1_edge_fraction": 0.1
+    },
+    "calibration": {
+      "enabled": true,
+      "max_evaluations": 180
+    },
+    "truncation": {
+      "metric_tolerance": 2e-06
+    },
+    "nelder_mead": {
+      "enabled": true,
+      "max_evaluations": 500,
+      "xatol": 1e-05,
+      "fatol": 1e-10
+    },
+    "random_search": {
+      "enabled": false,
+      "max_evaluations": 500
+    },
+    "training": {},
+    "worst_case": {
+      "enabled": true,
+      "max_evaluations": 200,
+      "seeds": [
+        2041,
+        2042
+      ],
+      "axis_points": 5,
+      "xatol": 0.001,
+      "fatol": 1e-08,
+      "fidelity_min": null
+    },
+    "risk_aware_grape": {
+      "enabled": true,
+      "alpha": 0.95,
+      "risk_weight": 1.0,
+      "leakage_weight": 2.0,
+      "smoothing": 1e-06,
+      "training_samples": 32,
+      "training_seed": 2050,
+      "optimizer_seeds": [
+        2030,
+        2031
+      ]
+    }
+  },
+  "tolerance": 2e-06,
+  "selection_devices": 200,
+  "stress_cases": "last 10 stored training scenarios, including nominal",
+  "strict_solver": {
+    "atol": 1e-12,
+    "rtol": 1e-10,
+    "max_step_ns": 0.05,
+    "nsteps": 100000,
+    "normalize_output": false
+  },
+  "source_hashes": {
+    "preconfirmatory_checks.py": "509b1dc6f49c1d03795a308549c5a2cdd59754dd567cd7d24cdd41ca79025f2f",
+    "confirmatory_statistics.py": "f377eabe1fde35ae47438054085aa8fcc0cab6da491793db73a04e013d691f95",
+    "challenge_model.py": "a179d7b9c47aefbbd9902252d9d04e7c5da8a1ae584367be7081a07eb43ce85a",
+    "grape.py": "bcc188444a1c54704e1a86f7437cca8affa271903b90e9f4b477079f1362a508",
+    "risk_aware_grape.py": "80183fc27e5198a465076085f17e0bca9222bf112f336a6c471b7bbc9865ee50",
+    "statistical_certification.py": "34b962ba87e5bb3940c02ec8bf21e6b84e0f5a635e410bebd25d84a84e9dc316",
+    "robust_optimization.py": "82f5c3b7d9176569666957978313b8e6a16b680bc2f04bb1b7880abb70092e6e"
+  },
+  "candidate_hashes": {
+    "conventional": "fcba5a0d24778ead0aa8d2b8094dc5206cb4fab9c8c737d4adb1a5fb23093ee6",
+    "risk": "c0c2c7fdd5bcc3bd1f2e1dc8a7a6e742fe6efadfe9103dbce2ffd58a97f21f02",
+    "continuation": "688247e572ef6589e5a9bf43a9457f9faddc022d808f46698856889bbff17343",
+    "calibrated_drag": "5bf7ce57bc7063419809f3c1e38743ad24581757decba3291067079e13e0762e",
+    "risk_unfiltered_diagnostic": "2bef3ee005d3da70ca232e3af34348d5a4a83945f548da4ac519a64988bf8709"
+  },
+  "independent_validation_generated": false
+}

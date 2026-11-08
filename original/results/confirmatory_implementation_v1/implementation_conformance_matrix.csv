@@ -1,0 +1,27 @@
+area,requirement,review_result,evidence
+Scientific freeze,"4383 artifact hashes, root dependencies, package versions, model, thresholds",PASS,verify_freeze
+Implementation identity,Exact execution/analysis sources and reporting interpretation bound to manifest,PASS,implementation_manifest.json
+Candidates,Four primary and one diagnostic hashes/roles; exact nominal reproduction,PASS,verify_freeze; nominal_reproduction.json
+CPU authority,Strict CPU QuTiP; five levels;15.6ns;80MHz; six unconditional states,PASS,frozen preconfirmatory_checks.solve
+Sampling,Exactly2000; device seed941206; frozen generator and distributions; no budget overrides,PASS,load_or_generate_dataset; validate_cohort
+Release gate,Acceptance required before execution and inside fresh generation,PASS,verify_release; gate tests
+One cohort,Singleton output reservation; atomic hashed read-only commit; transaction evidence,PASS,reserve_and_load_cohort
+Interruption,No redraw after ambiguous generation or missing committed cohort,PASS,interruption and singleton tests
+Version-safe resume,Metadata/source/library/distribution checks and per-record source/cohort/pulse/scenario identity,PASS,validate_cohort; verify_checkpoint
+Records,"Six-state completeness, scalar/state/infidelity consistency, finite physical diagnostics",PASS,validate_metrics
+Failure handling,"Preserve errors, drain returned in-flight results, cancel pending work",PASS,run_pending; failure-drain test
+No favorable filtering,Engineering adverse outcomes remain completed production results,PASS,adverse-result test
+Contrast family,Exactly six frozen pairs among four representatives,PASS,unchanged PAIRS; family completeness test
+Bootstrap,"50000 paired common-index resamples, seed941207;100000 prefix-compatible sensitivity",PASS,frozen paired_cvar_intervals; reference-bootstrap test
+CVaR,"Infidelity upper-tail fractional estimator, mass100 at n2000",PASS,unchanged empirical_cvar; tail tests
+Bonferroni,"Six two-sided99.1666667% percentile CIs, quantiles .05/12 and1-.05/12",PASS,unchanged helper; quantile reference test
+P05,Original one-sided95% order statistic retained,PASS,unchanged tail_bound_details; index test
+Simultaneous engineering,Same order-statistic method at98.75% for four primary pulses,PASS,engineering_result; simultaneous index test
+Diagnostic exclusion,Never in primary family or promoted by favorable results/changed role flag,PASS,diagnostic-promotion tests
+Numerical checks,"2e-6 gates, fixed20 repeat indices, CPU dt/4 vsdt/8 and six-state propagation",PASS,finish_validation; mocked repeat-control test
+Numerical interpretation,Raw CI/direction unchanged; unresolved point/boundary/sensitivity flagged,PASS,summarize_claim; reporting_interpretation.json
+Assessment separation,"Statistical, engineering, numerical and publication results independent",PASS,separation tests; overall_reporting
+Overall convention,Conservative deterministic pre-data implementation interpretation,PASS,reporting_interpretation.json; all-label tests
+Changed implementation,Source/review-artifact/manifest fingerprints checked; no automatic approval,PASS,verify_release; tamper tests
+Completed recovery,Completed evaluations not resubmitted; duplicate execution locked,PASS,planner/lock/state-machine tests
+Review scope,Synthetic mathematics and saved development only; no independent generator/campaign,PASS,38 tests; guarded audit; absent registry/cohort

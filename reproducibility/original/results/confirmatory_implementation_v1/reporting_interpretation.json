@@ -1,0 +1,49 @@
+{
+  "version": "implementation-v1-final-pre-data-review",
+  "status": "ADOPTED_BEFORE_VALIDATION",
+  "scientific_protocol_modified": false,
+  "statistical_rules": {
+    "primary_contrasts": 6,
+    "ordinary_ci": 0.95,
+    "bonferroni_ci": 0.9916666666666667,
+    "primary_bootstrap": 50000,
+    "sensitivity_bootstrap": 100000,
+    "seed": 941207,
+    "ci_and_direction_immutable": true,
+    "diagnostic_excluded_from_primary_family": true
+  },
+  "numerical_assessment": {
+    "tolerance": 2e-06,
+    "unresolved_when_any": [
+      "absolute point CVaR difference <=2e-6",
+      "directional adjusted-CI boundary nearest zero <=2e-6",
+      "direction can reverse under observed repeat-device fidelity envelope"
+    ],
+    "envelope": "Sum of the two candidates maximum observed absolute fidelity discrepancies on the20 prespecified repeat indices. Finite diagnostic evidence, not a uniform error bound.",
+    "statement": "Numerical flags never change statistical CIs or their directions. Unresolved contrasts cannot support superiority claims.",
+    "bootstrap_sensitivity": "Report50k and100k direction agreement separately as statistical sensitivity, not as numerical error."
+  },
+  "engineering_assessment": {
+    "one_sided_p05_confidence": 0.95,
+    "simultaneous_confidence": 0.9875,
+    "maximum_leakage": 0.0001,
+    "nominal_fidelity": 0.999,
+    "p05_lcb": 0.995,
+    "diagnostic_never_eligible": true,
+    "statistical_and_numerical_assessments_separate": true
+  },
+  "overall_label_convention": {
+    "original_scientific_rule": false,
+    "individual_contrast_results_authoritative": true,
+    "qualified_favorable_contrast": "Original adjusted50k CI favors candidate;100k direction agrees; numerical assessment resolved; both pulses pass simultaneous engineering certification.",
+    "CONFIRMED": "All six directed favorable contrasts qualify.",
+    "PARTIALLY_CONFIRMED": "At least one but fewer than six directed favorable contrasts qualify.",
+    "NOT_CONFIRMED": "None qualify.",
+    "caveat": "A NOT_CONFIRMED label refers to favorable-order claims, not validity or value of negative/mixed research. Significant inferiority and all individual results remain reported."
+  },
+  "publication_readiness": {
+    "independent_of_favorable_outcomes": true,
+    "q1_acceptance_claim": false,
+    "statement": "A complete numerically interpretable simulated-device study permits manuscript preparation with limitations; publication requires a defensible novelty/model-scope argument and appropriate external evidence."
+  }
+}

@@ -1,0 +1,947 @@
+{
+  "equal_objectives_conventional_7500": {
+    "passed": true,
+    "waveform_sha256": "ce98ad4ea249178be452659e012f99622e7a8e30df048fe6317cdf4b78cf6be9",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.7033700572266497e-07,
+        "maximum_leakage_error": 1.868770684822007e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 4.2476798634005775e-08,
+        "maximum_leakage_error": 4.670637304941426e-09
+      }
+    },
+    "gradient": {
+      "objective_error": 1.1917550279960665e-15,
+      "maximum_gradient_error": 4.3568664301329996e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.1546344864006497e-14,
+        "hermiticity_error": 3.996691761046554e-15,
+        "minimum_eigenvalue": 1.0943522050669229e-09
+      },
+      "8": {
+        "trace_error": 2.0872193604341474e-14,
+        "hermiticity_error": 2.7209424236115014e-15,
+        "minimum_eigenvalue": 1.09453024398299e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.9371590499995364,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_objectives_risk_7500": {
+    "passed": true,
+    "waveform_sha256": "061ee1119b1745196d9b7624bda1d615bbf8835a87ccc2e95ca663d39cc575a9",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 2.770066390711534e-07,
+        "maximum_leakage_error": 2.2335402122757681e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 6.930176943420463e-08,
+        "maximum_leakage_error": 5.5869328227593816e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 4.261348218737027e-15,
+      "maximum_gradient_error": 4.536301889679351e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.465495105221417e-14,
+        "hermiticity_error": 4.765965080869849e-15,
+        "minimum_eigenvalue": 1.3999844397383614e-09
+      },
+      "8": {
+        "trace_error": 2.5979221046981203e-14,
+        "hermiticity_error": 3.38406829026276e-15,
+        "minimum_eigenvalue": 1.4005540611006999e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.9324762859996554,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_objectives_continuation_7500": {
+    "passed": true,
+    "waveform_sha256": "5fb9b761dd537eddb498e42feedc589ff073a74e7feaf8021dfc88e3fb23c68a",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.6335730901317902e-07,
+        "maximum_leakage_error": 2.5869096779179593e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 4.077789983458757e-08,
+        "maximum_leakage_error": 6.470627852351771e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 8.310192811666894e-15,
+      "maximum_gradient_error": 2.336100063393687e-13,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.776359303032249e-14,
+        "hermiticity_error": 1.973580050008365e-15,
+        "minimum_eigenvalue": 2.3781672840272104e-09
+      },
+      "8": {
+        "trace_error": 1.4432949759046044e-14,
+        "hermiticity_error": 3.972898642419538e-15,
+        "minimum_eigenvalue": 2.378926689493454e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 3.483222878999868,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_objectives_conventional_7501": {
+    "passed": true,
+    "waveform_sha256": "0b38198ba91c03364fbd4cb4d285511d38f4042241a1a0e9cef176747b9d3453",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.6243914147118232e-07,
+        "maximum_leakage_error": 1.1761418416839369e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 4.059984193283128e-08,
+        "maximum_leakage_error": 2.934978650936395e-09
+      }
+    },
+    "gradient": {
+      "objective_error": 2.0595504468534642e-15,
+      "maximum_gradient_error": 3.0878077872387166e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.5321078155787703e-14,
+        "hermiticity_error": 5.264593514185232e-15,
+        "minimum_eigenvalue": 1.1914859461778717e-09
+      },
+      "8": {
+        "trace_error": 2.420286470803495e-14,
+        "hermiticity_error": 5.05482337468477e-15,
+        "minimum_eigenvalue": 1.1916975617738072e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.3530412800000704,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_objectives_risk_7501": {
+    "passed": true,
+    "waveform_sha256": "ffb01faea5fc4f3126cd4deb35bde484c8617ad8e9db9fd6460e35770078c489",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 2.965602410309742e-07,
+        "maximum_leakage_error": 6.303694012102219e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 7.41074772658834e-08,
+        "maximum_leakage_error": 1.5762686579655436e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 4.421810140264881e-15,
+      "maximum_gradient_error": 4.132978681514743e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.2545521025564645e-14,
+        "hermiticity_error": 3.3547735905223577e-15,
+        "minimum_eigenvalue": 1.0444764853730389e-09
+      },
+      "8": {
+        "trace_error": 2.797762022429258e-14,
+        "hermiticity_error": 2.6023037167039828e-15,
+        "minimum_eigenvalue": 1.0447194470421222e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.890893495000455,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_objectives_continuation_7501": {
+    "passed": true,
+    "waveform_sha256": "a097e9c0fc9b9129225559ff390caba38344c26fd4e231336fd372da4846f069",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.3647660446203247e-07,
+        "maximum_leakage_error": 1.0247151512859779e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 3.40739774173926e-08,
+        "maximum_leakage_error": 2.561662120335764e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 6.71511457550622e-15,
+      "maximum_gradient_error": 8.205242041370298e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.9539925969931316e-14,
+        "hermiticity_error": 3.4110521016262116e-15,
+        "minimum_eigenvalue": 2.4448263602031697e-09
+      },
+      "8": {
+        "trace_error": 2.553512957431512e-14,
+        "hermiticity_error": 4.128647703823963e-15,
+        "minimum_eigenvalue": 2.445337263500367e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.9306564030002846,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_objectives_conventional_7502": {
+    "passed": true,
+    "waveform_sha256": "fcba5a0d24778ead0aa8d2b8094dc5206cb4fab9c8c737d4adb1a5fb23093ee6",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.7001250962600523e-07,
+        "maximum_leakage_error": 2.1469678205499553e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 4.257251651207383e-08,
+        "maximum_leakage_error": 5.3693961297098945e-09
+      }
+    },
+    "gradient": {
+      "objective_error": 3.209238430557093e-16,
+      "maximum_gradient_error": 5.527940301688905e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.0658151886640213e-14,
+        "hermiticity_error": 4.254325342692776e-15,
+        "minimum_eigenvalue": 1.0788381482831935e-09
+      },
+      "8": {
+        "trace_error": 1.9761969910005736e-14,
+        "hermiticity_error": 3.320645319211816e-15,
+        "minimum_eigenvalue": 1.079011128636754e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.357667353000579,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_objectives_risk_7502": {
+    "passed": true,
+    "waveform_sha256": "dae360655a9666782d13849db32c7cbb4b04d1c6c091a156c4288de0800b583c",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.4867500719439875e-07,
+        "maximum_leakage_error": 2.0743861634821802e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 3.7045950862513166e-08,
+        "maximum_leakage_error": 5.18615399438952e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 6.6145006138995655e-15,
+      "maximum_gradient_error": 8.873110579621368e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.7985614945280987e-14,
+        "hermiticity_error": 3.749485156296937e-15,
+        "minimum_eigenvalue": 2.3394228368417057e-09
+      },
+      "8": {
+        "trace_error": 2.6201270290392258e-14,
+        "hermiticity_error": 6.485187352244654e-15,
+        "minimum_eigenvalue": 2.340076576288607e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.9470601180000813,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_objectives_continuation_7502": {
+    "passed": true,
+    "waveform_sha256": "5a150ccf8b01f39d0567cba02e1975103e3aa908877f7cfabd4780c71a7e0bcb",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 8.939249929174053e-08,
+        "maximum_leakage_error": 1.326440609215841e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 2.228596218678547e-08,
+        "maximum_leakage_error": 3.3157193848925215e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 7.580741590018647e-15,
+      "maximum_gradient_error": 7.945033519973776e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.5543144340326545e-14,
+        "hermiticity_error": 4.279831136628279e-15,
+        "minimum_eigenvalue": 2.44575430036423e-09
+      },
+      "8": {
+        "trace_error": 1.865174754663736e-14,
+        "hermiticity_error": 5.024665442624038e-15,
+        "minimum_eigenvalue": 2.446302012406586e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.9298861999996006,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_passes_conventional_7500": {
+    "passed": true,
+    "waveform_sha256": "ce98ad4ea249178be452659e012f99622e7a8e30df048fe6317cdf4b78cf6be9",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.7033700572266497e-07,
+        "maximum_leakage_error": 1.868770684822007e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 4.2476798634005775e-08,
+        "maximum_leakage_error": 4.670637304941426e-09
+      }
+    },
+    "gradient": {
+      "objective_error": 1.1917550279960665e-15,
+      "maximum_gradient_error": 4.3568664301329996e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.1546344864006497e-14,
+        "hermiticity_error": 3.996691761046554e-15,
+        "minimum_eigenvalue": 1.0943522050669229e-09
+      },
+      "8": {
+        "trace_error": 2.0872193604341474e-14,
+        "hermiticity_error": 2.7209424236115014e-15,
+        "minimum_eigenvalue": 1.09453024398299e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.2952132650007115,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_passes_risk_7500": {
+    "passed": true,
+    "waveform_sha256": "061ee1119b1745196d9b7624bda1d615bbf8835a87ccc2e95ca663d39cc575a9",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 2.770066390711534e-07,
+        "maximum_leakage_error": 2.2335402122757681e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 6.930176943420463e-08,
+        "maximum_leakage_error": 5.5869328227593816e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 4.261348218737027e-15,
+      "maximum_gradient_error": 4.536301889679351e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.465495105221417e-14,
+        "hermiticity_error": 4.765965080869849e-15,
+        "minimum_eigenvalue": 1.3999844397383614e-09
+      },
+      "8": {
+        "trace_error": 2.5979221046981203e-14,
+        "hermiticity_error": 3.38406829026276e-15,
+        "minimum_eigenvalue": 1.4005540611006999e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.941788436999559,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_passes_continuation_7500": {
+    "passed": true,
+    "waveform_sha256": "5fb9b761dd537eddb498e42feedc589ff073a74e7feaf8021dfc88e3fb23c68a",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.6335730901317902e-07,
+        "maximum_leakage_error": 2.5869096779179593e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 4.077789983458757e-08,
+        "maximum_leakage_error": 6.470627852351771e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 8.310192811666894e-15,
+      "maximum_gradient_error": 2.336100063393687e-13,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.776359303032249e-14,
+        "hermiticity_error": 1.973580050008365e-15,
+        "minimum_eigenvalue": 2.3781672840272104e-09
+      },
+      "8": {
+        "trace_error": 1.4432949759046044e-14,
+        "hermiticity_error": 3.972898642419538e-15,
+        "minimum_eigenvalue": 2.378926689493454e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 3.482420798000021,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_passes_conventional_7501": {
+    "passed": true,
+    "waveform_sha256": "0b38198ba91c03364fbd4cb4d285511d38f4042241a1a0e9cef176747b9d3453",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.6243914147118232e-07,
+        "maximum_leakage_error": 1.1761418416839369e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 4.059984193283128e-08,
+        "maximum_leakage_error": 2.934978650936395e-09
+      }
+    },
+    "gradient": {
+      "objective_error": 2.0595504468534642e-15,
+      "maximum_gradient_error": 3.0878077872387166e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.5321078155787703e-14,
+        "hermiticity_error": 5.264593514185232e-15,
+        "minimum_eigenvalue": 1.1914859461778717e-09
+      },
+      "8": {
+        "trace_error": 2.420286470803495e-14,
+        "hermiticity_error": 5.05482337468477e-15,
+        "minimum_eigenvalue": 1.1916975617738072e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.298538123000071,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_passes_risk_7501": {
+    "passed": true,
+    "waveform_sha256": "ffb01faea5fc4f3126cd4deb35bde484c8617ad8e9db9fd6460e35770078c489",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 2.965602410309742e-07,
+        "maximum_leakage_error": 6.303694012102219e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 7.41074772658834e-08,
+        "maximum_leakage_error": 1.5762686579655436e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 4.421810140264881e-15,
+      "maximum_gradient_error": 4.132978681514743e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.2545521025564645e-14,
+        "hermiticity_error": 3.3547735905223577e-15,
+        "minimum_eigenvalue": 1.0444764853730389e-09
+      },
+      "8": {
+        "trace_error": 2.797762022429258e-14,
+        "hermiticity_error": 2.6023037167039828e-15,
+        "minimum_eigenvalue": 1.0447194470421222e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.909963250000146,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_passes_continuation_7501": {
+    "passed": true,
+    "waveform_sha256": "a097e9c0fc9b9129225559ff390caba38344c26fd4e231336fd372da4846f069",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.3647660446203247e-07,
+        "maximum_leakage_error": 1.0247151512859779e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 3.40739774173926e-08,
+        "maximum_leakage_error": 2.561662120335764e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 6.71511457550622e-15,
+      "maximum_gradient_error": 8.205242041370298e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.9539925969931316e-14,
+        "hermiticity_error": 3.4110521016262116e-15,
+        "minimum_eigenvalue": 2.4448263602031697e-09
+      },
+      "8": {
+        "trace_error": 2.553512957431512e-14,
+        "hermiticity_error": 4.128647703823963e-15,
+        "minimum_eigenvalue": 2.445337263500367e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.871077212000273,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_passes_conventional_7502": {
+    "passed": true,
+    "waveform_sha256": "fcba5a0d24778ead0aa8d2b8094dc5206cb4fab9c8c737d4adb1a5fb23093ee6",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.7001250962600523e-07,
+        "maximum_leakage_error": 2.1469678205499553e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 4.257251651207383e-08,
+        "maximum_leakage_error": 5.3693961297098945e-09
+      }
+    },
+    "gradient": {
+      "objective_error": 3.209238430557093e-16,
+      "maximum_gradient_error": 5.527940301688905e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.0658151886640213e-14,
+        "hermiticity_error": 4.254325342692776e-15,
+        "minimum_eigenvalue": 1.0788381482831935e-09
+      },
+      "8": {
+        "trace_error": 1.9761969910005736e-14,
+        "hermiticity_error": 3.320645319211816e-15,
+        "minimum_eigenvalue": 1.079011128636754e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.2934828810002728,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_passes_risk_7502": {
+    "passed": true,
+    "waveform_sha256": "dae360655a9666782d13849db32c7cbb4b04d1c6c091a156c4288de0800b583c",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.4867500719439875e-07,
+        "maximum_leakage_error": 2.0743861634821802e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 3.7045950862513166e-08,
+        "maximum_leakage_error": 5.18615399438952e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 6.6145006138995655e-15,
+      "maximum_gradient_error": 8.873110579621368e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.7985614945280987e-14,
+        "hermiticity_error": 3.749485156296937e-15,
+        "minimum_eigenvalue": 2.3394228368417057e-09
+      },
+      "8": {
+        "trace_error": 2.6201270290392258e-14,
+        "hermiticity_error": 6.485187352244654e-15,
+        "minimum_eigenvalue": 2.340076576288607e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.8395850649994827,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_passes_continuation_7502": {
+    "passed": true,
+    "waveform_sha256": "5a150ccf8b01f39d0567cba02e1975103e3aa908877f7cfabd4780c71a7e0bcb",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 8.939249929174053e-08,
+        "maximum_leakage_error": 1.326440609215841e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 2.228596218678547e-08,
+        "maximum_leakage_error": 3.3157193848925215e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 7.580741590018647e-15,
+      "maximum_gradient_error": 7.945033519973776e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.5543144340326545e-14,
+        "hermiticity_error": 4.279831136628279e-15,
+        "minimum_eigenvalue": 2.44575430036423e-09
+      },
+      "8": {
+        "trace_error": 1.865174754663736e-14,
+        "hermiticity_error": 5.024665442624038e-15,
+        "minimum_eigenvalue": 2.446302012406586e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.854633917000683,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_wall_conventional_7500": {
+    "passed": true,
+    "waveform_sha256": "ce98ad4ea249178be452659e012f99622e7a8e30df048fe6317cdf4b78cf6be9",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.7033700572266497e-07,
+        "maximum_leakage_error": 1.868770684822007e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 4.2476798634005775e-08,
+        "maximum_leakage_error": 4.670637304941426e-09
+      }
+    },
+    "gradient": {
+      "objective_error": 1.1917550279960665e-15,
+      "maximum_gradient_error": 4.3568664301329996e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.1546344864006497e-14,
+        "hermiticity_error": 3.996691761046554e-15,
+        "minimum_eigenvalue": 1.0943522050669229e-09
+      },
+      "8": {
+        "trace_error": 2.0872193604341474e-14,
+        "hermiticity_error": 2.7209424236115014e-15,
+        "minimum_eigenvalue": 1.09453024398299e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.3991549250004027,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_wall_risk_7500": {
+    "passed": true,
+    "waveform_sha256": "061ee1119b1745196d9b7624bda1d615bbf8835a87ccc2e95ca663d39cc575a9",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 2.770066390711534e-07,
+        "maximum_leakage_error": 2.2335402122757681e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 6.930176943420463e-08,
+        "maximum_leakage_error": 5.5869328227593816e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 4.261348218737027e-15,
+      "maximum_gradient_error": 4.536301889679351e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.465495105221417e-14,
+        "hermiticity_error": 4.765965080869849e-15,
+        "minimum_eigenvalue": 1.3999844397383614e-09
+      },
+      "8": {
+        "trace_error": 2.5979221046981203e-14,
+        "hermiticity_error": 3.38406829026276e-15,
+        "minimum_eigenvalue": 1.4005540611006999e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.9651671440005885,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_wall_continuation_7500": {
+    "passed": true,
+    "waveform_sha256": "5fb9b761dd537eddb498e42feedc589ff073a74e7feaf8021dfc88e3fb23c68a",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.6335730901317902e-07,
+        "maximum_leakage_error": 2.5869096779179593e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 4.077789983458757e-08,
+        "maximum_leakage_error": 6.470627852351771e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 8.310192811666894e-15,
+      "maximum_gradient_error": 2.336100063393687e-13,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.776359303032249e-14,
+        "hermiticity_error": 1.973580050008365e-15,
+        "minimum_eigenvalue": 2.3781672840272104e-09
+      },
+      "8": {
+        "trace_error": 1.4432949759046044e-14,
+        "hermiticity_error": 3.972898642419538e-15,
+        "minimum_eigenvalue": 2.378926689493454e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.8955216590002237,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_wall_conventional_7501": {
+    "passed": true,
+    "waveform_sha256": "0b38198ba91c03364fbd4cb4d285511d38f4042241a1a0e9cef176747b9d3453",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.6243914147118232e-07,
+        "maximum_leakage_error": 1.1761418416839369e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 4.059984193283128e-08,
+        "maximum_leakage_error": 2.934978650936395e-09
+      }
+    },
+    "gradient": {
+      "objective_error": 2.0595504468534642e-15,
+      "maximum_gradient_error": 3.0878077872387166e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.5321078155787703e-14,
+        "hermiticity_error": 5.264593514185232e-15,
+        "minimum_eigenvalue": 1.1914859461778717e-09
+      },
+      "8": {
+        "trace_error": 2.420286470803495e-14,
+        "hermiticity_error": 5.05482337468477e-15,
+        "minimum_eigenvalue": 1.1916975617738072e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.3141271639997285,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_wall_risk_7501": {
+    "passed": true,
+    "waveform_sha256": "ffb01faea5fc4f3126cd4deb35bde484c8617ad8e9db9fd6460e35770078c489",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 2.965602410309742e-07,
+        "maximum_leakage_error": 6.303694012102219e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 7.41074772658834e-08,
+        "maximum_leakage_error": 1.5762686579655436e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 4.421810140264881e-15,
+      "maximum_gradient_error": 4.132978681514743e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.2545521025564645e-14,
+        "hermiticity_error": 3.3547735905223577e-15,
+        "minimum_eigenvalue": 1.0444764853730389e-09
+      },
+      "8": {
+        "trace_error": 2.797762022429258e-14,
+        "hermiticity_error": 2.6023037167039828e-15,
+        "minimum_eigenvalue": 1.0447194470421222e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.9067556930003775,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_wall_continuation_7501": {
+    "passed": true,
+    "waveform_sha256": "a097e9c0fc9b9129225559ff390caba38344c26fd4e231336fd372da4846f069",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.3647660446203247e-07,
+        "maximum_leakage_error": 1.0247151512859779e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 3.40739774173926e-08,
+        "maximum_leakage_error": 2.561662120335764e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 6.71511457550622e-15,
+      "maximum_gradient_error": 8.205242041370298e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.9539925969931316e-14,
+        "hermiticity_error": 3.4110521016262116e-15,
+        "minimum_eigenvalue": 2.4448263602031697e-09
+      },
+      "8": {
+        "trace_error": 2.553512957431512e-14,
+        "hermiticity_error": 4.128647703823963e-15,
+        "minimum_eigenvalue": 2.445337263500367e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 3.0077216629997565,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_wall_conventional_7502": {
+    "passed": true,
+    "waveform_sha256": "fcba5a0d24778ead0aa8d2b8094dc5206cb4fab9c8c737d4adb1a5fb23093ee6",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.7001250962600523e-07,
+        "maximum_leakage_error": 2.1469678205499553e-08
+      },
+      "8": {
+        "maximum_fidelity_error": 4.257251651207383e-08,
+        "maximum_leakage_error": 5.3693961297098945e-09
+      }
+    },
+    "gradient": {
+      "objective_error": 3.209238430557093e-16,
+      "maximum_gradient_error": 5.527940301688905e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.0658151886640213e-14,
+        "hermiticity_error": 4.254325342692776e-15,
+        "minimum_eigenvalue": 1.0788381482831935e-09
+      },
+      "8": {
+        "trace_error": 1.9761969910005736e-14,
+        "hermiticity_error": 3.320645319211816e-15,
+        "minimum_eigenvalue": 1.079011128636754e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.341514471001574,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_wall_risk_7502": {
+    "passed": true,
+    "waveform_sha256": "dae360655a9666782d13849db32c7cbb4b04d1c6c091a156c4288de0800b583c",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 1.4867500719439875e-07,
+        "maximum_leakage_error": 2.0743861634821802e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 3.7045950862513166e-08,
+        "maximum_leakage_error": 5.18615399438952e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 6.6145006138995655e-15,
+      "maximum_gradient_error": 8.873110579621368e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.7985614945280987e-14,
+        "hermiticity_error": 3.749485156296937e-15,
+        "minimum_eigenvalue": 2.3394228368417057e-09
+      },
+      "8": {
+        "trace_error": 2.6201270290392258e-14,
+        "hermiticity_error": 6.485187352244654e-15,
+        "minimum_eigenvalue": 2.340076576288607e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 2.9407593210016785,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  },
+  "equal_wall_continuation_7502": {
+    "passed": true,
+    "waveform_sha256": "5a150ccf8b01f39d0567cba02e1975103e3aa908877f7cfabd4780c71a7e0bcb",
+    "nominal_reproduction_error": 0.0,
+    "interpolation_checks": {
+      "4": {
+        "maximum_fidelity_error": 8.939249929174053e-08,
+        "maximum_leakage_error": 1.326440609215841e-07
+      },
+      "8": {
+        "maximum_fidelity_error": 2.228596218678547e-08,
+        "maximum_leakage_error": 3.3157193848925215e-08
+      }
+    },
+    "gradient": {
+      "objective_error": 7.580741590018647e-15,
+      "maximum_gradient_error": 7.945033519973776e-16,
+      "passed": true
+    },
+    "physical_states": {
+      "4": {
+        "trace_error": 1.5543144340326545e-14,
+        "hermiticity_error": 4.279831136628279e-15,
+        "minimum_eigenvalue": 2.44575430036423e-09
+      },
+      "8": {
+        "trace_error": 1.865174754663736e-14,
+        "hermiticity_error": 5.024665442624038e-15,
+        "minimum_eigenvalue": 2.446302012406586e-09
+      }
+    },
+    "constraints_passed": true,
+    "verification_seconds": 3.0230493739982194,
+    "scope": "nominal and two predeclared joint stress cases; pointwise, not a uniform bound"
+  }
+}

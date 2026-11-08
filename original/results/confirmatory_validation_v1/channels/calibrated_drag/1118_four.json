@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE",
+  "candidate": "calibrated_drag",
+  "index": 1118,
+  "mode": "four",
+  "candidate_sha256": "5bf7ce57bc7063419809f3c1e38743ad24581757decba3291067079e13e0762e",
+  "dataset_sha256": "5819f5117c6216ec3778a3fa5f9a33ed215da74316df7ebf6b80c964ab047fb2",
+  "scenario_sha256": "12973f681c9f4205eddb94987645666805a080fa5c34ed97e7dcdf15a145830f",
+  "metrics": {
+    "fidelity": 0.9990141330199553,
+    "infidelity": 0.0009858669800446584,
+    "leakage": 3.526073169897874e-05,
+    "state_fidelities": [
+      0.9987370114013769,
+      0.9987409769643723,
+      0.9991903776012917,
+      0.9991798888110033,
+      0.9992333070357589,
+      0.9990032363059286
+    ],
+    "state_leakages": [
+      3.449913324180821e-05,
+      3.602233015614929e-05,
+      1.8616825333755744e-05,
+      5.190463806420174e-05,
+      1.7302401696724635e-05,
+      5.3219061701232854e-05
+    ],
+    "max_trace_error": 5.995204332975845e-15,
+    "min_output_eigenvalue": 5.841382113501252e-10,
+    "max_hermiticity_error": 6.453171330633722e-16,
+    "subspace_population_balance_error": 5.995204332975845e-15,
+    "elapsed_seconds": 0.14197618499929376,
+    "physicality_pass": true
+  },
+  "elapsed_seconds": 0.14254174500001682,
+  "checkpoint_sha256": "1079a8d0a20f94304e3b743643e5da305ceae670c07f5ecf5fe73fd40319c8c8"
+}

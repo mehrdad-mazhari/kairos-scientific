@@ -1,0 +1,73 @@
+{
+  "completed_trials": 27,
+  "optimized_trials": 27,
+  "required_trials": 27,
+  "missing_trials": [],
+  "actual_backend": "jax_gpu",
+  "precision": "float64 / complex128",
+  "converged_trials": 0,
+  "convergence_rate": 0.0,
+  "total_optimizer_wall_seconds": 32803.38531651699,
+  "gpu_backend_wall_seconds": 32636.786203200834,
+  "gpu_time_scope": "synchronized optimizer GPU calls including transfer/dispatch/JIT; excludes CPU probes, shared setup and post-trial numerical verification; not CUDA-kernel-only time",
+  "numerical_failures": [],
+  "regime_comparisons": {
+    "equal_objectives": {
+      "risk": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.00037260723869787506,
+        "mean_percent_improvement": 12.90890077703934,
+        "mean_fidelity_change": 9.799246350239432e-05,
+        "p05_change": 0.00022649268550082682
+      },
+      "continuation": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.0006064935620707125,
+        "mean_percent_improvement": 21.000368962450683,
+        "mean_fidelity_change": 0.00020013409336228083,
+        "p05_change": 0.00040803818185686236
+      }
+    },
+    "equal_passes": {
+      "risk": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.00037260723869787506,
+        "mean_percent_improvement": 12.90890077703934,
+        "mean_fidelity_change": 9.799246350239432e-05,
+        "p05_change": 0.00022649268550082682
+      },
+      "continuation": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.0006064935620707125,
+        "mean_percent_improvement": 21.000368962450683,
+        "mean_fidelity_change": 0.00020013409336228083,
+        "p05_change": 0.00040803818185686236
+      }
+    },
+    "equal_wall": {
+      "risk": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.00037260723869787506,
+        "mean_percent_improvement": 12.90890077703934,
+        "mean_fidelity_change": 9.799246350239432e-05,
+        "p05_change": 0.00022649268550082682
+      },
+      "continuation": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.0006064935620707125,
+        "mean_percent_improvement": 21.000368962450683,
+        "mean_fidelity_change": 0.00020013409336228083,
+        "p05_change": 0.00040803818185686236
+      }
+    }
+  },
+  "hyperparameter_search_trials": 0,
+  "hyperparameters_predeclared": true,
+  "validation_generated": false,
+  "statistical_superiority_established": false,
+  "decision": "NO-GO",
+  "decision_reason": "Incomplete development trials and/or numerical or convergence limitations remain",
+  "resume_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python full_matched_study.py --config full_matched_config.json --output results/full_matched_budget --backend gpu",
+  "confirmatory_command": null,
+  "confirmatory_status": "Not frozen or authorized by this development output; existing research_benchmark confirmation does not cover three-regime continuation comparison"
+}

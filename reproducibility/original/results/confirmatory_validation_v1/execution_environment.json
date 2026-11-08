@@ -1,0 +1,22 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.17.1",
+    "qutip": "5.3.1",
+    "matplotlib": "3.11.0"
+  },
+  "source_hashes": {
+    "confirmatory_execution_v1.py": "a15f476dde9c1c11c378c3fd336d294317dfe638792d071995e40c37e40e4d8f",
+    "confirmatory_analysis_v1.py": "5d205cb08007a4654fc163d9db59c017788bf5d04fccf357550c03230480b635"
+  },
+  "solver": {
+    "backend": "CPU QuTiP propagator",
+    "atol": 1e-12,
+    "rtol": 1e-10,
+    "max_step_ns": 0.05,
+    "nsteps": 100000,
+    "normalize_output": false
+  },
+  "workers": 4
+}

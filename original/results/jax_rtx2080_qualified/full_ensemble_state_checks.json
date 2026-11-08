@@ -1,0 +1,76 @@
+{
+  "float32": {
+    "actual_platform": "gpu",
+    "scenarios": 2000,
+    "maximum_trace_error": 1.895427703857422e-05,
+    "hermiticity_error": 2.931058361355099e-06,
+    "minimum_eigenvalue": 4.1979944520598167e-10,
+    "passed": false,
+    "diagnostics": {
+      "requested_backend": "jax_gpu",
+      "actual_backend": "jax_gpu",
+      "platform": "gpu",
+      "device": "NVIDIA GeForce RTX 2080 SUPER",
+      "precision": "float32",
+      "gpu_qualified": false,
+      "oom_reductions": 0,
+      "forward_scenario_passes": 2000,
+      "adjoint_scenario_passes": 0,
+      "padded_forward_scenario_passes": 2016,
+      "batch_size": 32,
+      "estimated_bytes_per_scenario": 16130200,
+      "memory_budget_bytes": 6012954214,
+      "kernel_cache_hit": false,
+      "last_execution_batch_size": 32,
+      "memory_stats": {
+        "num_allocs": 20076,
+        "bytes_in_use": 8960,
+        "peak_bytes_in_use": 106307584,
+        "largest_alloc_size": 33554432,
+        "bytes_limit": 6121586688,
+        "bytes_reserved": 0,
+        "peak_bytes_reserved": 0,
+        "largest_free_block_bytes": 67108864,
+        "pool_bytes": 136314880,
+        "peak_pool_bytes": 136314880
+      }
+    }
+  },
+  "float64": {
+    "actual_platform": "gpu",
+    "scenarios": 2000,
+    "maximum_trace_error": 2.1982416018449767e-14,
+    "hermiticity_error": 7.721986061402459e-15,
+    "minimum_eigenvalue": 4.1828726815150703e-10,
+    "passed": true,
+    "diagnostics": {
+      "requested_backend": "jax_gpu",
+      "actual_backend": "jax_gpu",
+      "platform": "gpu",
+      "device": "NVIDIA GeForce RTX 2080 SUPER",
+      "precision": "float64",
+      "gpu_qualified": false,
+      "oom_reductions": 0,
+      "forward_scenario_passes": 2000,
+      "adjoint_scenario_passes": 0,
+      "padded_forward_scenario_passes": 2016,
+      "batch_size": 32,
+      "estimated_bytes_per_scenario": 32260400,
+      "memory_budget_bytes": 6012954214,
+      "kernel_cache_hit": false,
+      "last_execution_batch_size": 32,
+      "memory_stats": {
+        "num_allocs": 40047,
+        "bytes_in_use": 24320,
+        "peak_bytes_in_use": 109043456,
+        "largest_alloc_size": 33554432,
+        "bytes_limit": 6121586688,
+        "bytes_reserved": 0,
+        "peak_bytes_reserved": 0,
+        "largest_free_block_bytes": 67108864,
+        "pool_bytes": 136314880,
+        "peak_pool_bytes": 136314880
+      }
+    }
+  }
+}

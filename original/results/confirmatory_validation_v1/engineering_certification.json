@@ -1,0 +1,100 @@
+{
+  "conventional": {
+    "status": "PASS",
+    "checks": {
+      "nominal_fidelity": true,
+      "nominal_leakage": true,
+      "p05_bound": true,
+      "maximum_sampled_leakage": true,
+      "amplitude": true,
+      "endpoints": true,
+      "duration": true,
+      "numerical": true,
+      "development_hilbert": true,
+      "frozen_primary_eligible": true
+    },
+    "passed": true,
+    "simultaneous_engineering_pass": true,
+    "failures": [],
+    "leakage_scope": "Maximum over sampled devices of the six-input-state mean leakage; not a uniform/global bound"
+  },
+  "risk": {
+    "status": "PASS",
+    "checks": {
+      "nominal_fidelity": true,
+      "nominal_leakage": true,
+      "p05_bound": true,
+      "maximum_sampled_leakage": true,
+      "amplitude": true,
+      "endpoints": true,
+      "duration": true,
+      "numerical": true,
+      "development_hilbert": true,
+      "frozen_primary_eligible": true
+    },
+    "passed": true,
+    "simultaneous_engineering_pass": true,
+    "failures": [],
+    "leakage_scope": "Maximum over sampled devices of the six-input-state mean leakage; not a uniform/global bound"
+  },
+  "continuation": {
+    "status": "PASS",
+    "checks": {
+      "nominal_fidelity": true,
+      "nominal_leakage": true,
+      "p05_bound": true,
+      "maximum_sampled_leakage": true,
+      "amplitude": true,
+      "endpoints": true,
+      "duration": true,
+      "numerical": true,
+      "development_hilbert": true,
+      "frozen_primary_eligible": true
+    },
+    "passed": true,
+    "simultaneous_engineering_pass": true,
+    "failures": [],
+    "leakage_scope": "Maximum over sampled devices of the six-input-state mean leakage; not a uniform/global bound"
+  },
+  "calibrated_drag": {
+    "status": "PASS",
+    "checks": {
+      "nominal_fidelity": true,
+      "nominal_leakage": true,
+      "p05_bound": true,
+      "maximum_sampled_leakage": true,
+      "amplitude": true,
+      "endpoints": true,
+      "duration": true,
+      "numerical": true,
+      "development_hilbert": true,
+      "frozen_primary_eligible": true
+    },
+    "passed": true,
+    "simultaneous_engineering_pass": true,
+    "failures": [],
+    "leakage_scope": "Maximum over sampled devices of the six-input-state mean leakage; not a uniform/global bound"
+  },
+  "risk_unfiltered_diagnostic": {
+    "status": "DIAGNOSTIC_ONLY",
+    "checks": {
+      "nominal_fidelity": true,
+      "nominal_leakage": true,
+      "p05_bound": true,
+      "maximum_sampled_leakage": false,
+      "amplitude": true,
+      "endpoints": true,
+      "duration": true,
+      "numerical": true,
+      "development_hilbert": true,
+      "frozen_primary_eligible": false
+    },
+    "passed": false,
+    "simultaneous_engineering_pass": false,
+    "failures": [
+      "maximum_sampled_leakage",
+      "frozen_primary_eligible"
+    ],
+    "leakage_scope": "Maximum over sampled devices of the six-input-state mean leakage; not a uniform/global bound"
+  }
+}

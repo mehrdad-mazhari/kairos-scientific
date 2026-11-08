@@ -1,0 +1,48 @@
+{
+  "passed": false,
+  "actual_platform": "unverified",
+  "precision": "float32",
+  "substeps": 4,
+  "device": {
+    "alpha_mhz": -220.0,
+    "t1_1_ns": 30000.0,
+    "t1_2_ns": 18000.0,
+    "tphi_1_ns": 40000.0,
+    "tphi_2_ns": 25000.0,
+    "dt_ns": 0.2,
+    "amplitude_limit_mhz": 80.0,
+    "detuning_mhz": 0.0,
+    "levels": 5
+  },
+  "times_sha256": "dd9a3b1ad6f7728760a9383f63e2cd02f6860dbfc4468f937f15a357c29fb662",
+  "gpu_device_kind": "NVIDIA GeForce RTX 2080 SUPER",
+  "numerical_source_hashes": {
+    "jax_backend.py": "5e5ff6a9759898ab78773794c033900e4fab241202a104c066156b02940ff4b0",
+    "grape.py": "bcc188444a1c54704e1a86f7437cca8affa271903b90e9f4b477079f1362a508",
+    "risk_aware_grape.py": "80183fc27e5198a465076085f17e0bca9222bf112f336a6c471b7bbc9865ee50",
+    "challenge_model.py": "a179d7b9c47aefbbd9902252d9d04e7c5da8a1ae584367be7081a07eb43ce85a"
+  },
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.17.1",
+    "qutip": "5.3.1",
+    "jax": "0.12.0.1",
+    "jaxlib": "0.12.0.1",
+    "jax-cuda12-pjrt": "0.12.0.1",
+    "jax-cuda12-plugin": "0.12.0.1",
+    "nvidia-cublas-cu12": "12.9.2.10",
+    "nvidia-cuda-cccl-cu12": "12.9.27",
+    "nvidia-cuda-cupti-cu12": "12.9.79",
+    "nvidia-cuda-nvcc-cu12": "12.9.86",
+    "nvidia-cuda-nvrtc-cu12": "12.9.86",
+    "nvidia-cuda-runtime-cu12": "12.9.79",
+    "nvidia-cudnn-cu12": "9.27.0.42",
+    "nvidia-cufft-cu12": "11.4.1.4",
+    "nvidia-cusolver-cu12": "11.7.5.82",
+    "nvidia-cusparse-cu12": "12.5.10.65",
+    "nvidia-nccl-cu12": "2.32.3",
+    "nvidia-nvjitlink-cu12": "12.9.86",
+    "nvidia-nvshmem-cu12": "3.8.0"
+  },
+  "note": "Numerical qualification only; not statistical certification. CPU-only results cannot authorize CUDA research."
+}

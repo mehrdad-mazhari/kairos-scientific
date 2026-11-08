@@ -1,0 +1,16 @@
+{
+  "base_config": "challenge_config.json",
+  "scenario_counts": [1, 10, 100, 500, 1000, 2000],
+  "precisions": ["float32", "float64"],
+  "scenario_seed": 88100,
+  "direction_seed": 88101,
+  "substeps": 4,
+  "batch_size": 32,
+  "max_vram_gb": 8.0,
+  "memory_fraction": 0.7,
+  "repetitions": 1,
+  "gradient_validation_scenarios": 100,
+  "benchmark_cpu_gradients": true,
+  "include_jax_cpu": true,
+  "jax_cpu_counts": [1, 10, 100]
+}

@@ -1,0 +1,15 @@
+{
+  "test_condition": "CUDA_VISIBLE_DEVICES is deliberately empty in this subprocess; actual host GPU is present",
+  "backend_info": {
+    "requested_backend": "jax_gpu",
+    "actual_backend": "cpu",
+    "effective_precision": "float64",
+    "fallback_reason": "JAX gpu initialization failed: Unknown backend: 'gpu' requested, but no platforms that are instances of gpu are present. Platforms present are: cpu",
+    "gpu_qualified": false
+  },
+  "warnings": [
+    "JAX gpu initialization failed: Unknown backend: 'gpu' requested, but no platforms that are instances of gpu are present. Platforms present are: cpu; falling back to CPU QuTiP/SciPy GRAPE"
+  ],
+  "objective_difference": 0.0,
+  "gradient_max_error": 0.0
+}

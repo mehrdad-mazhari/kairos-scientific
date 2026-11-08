@@ -1,0 +1,536 @@
+{
+  "completed_trials": 27,
+  "optimized_trials": 27,
+  "required_trials": 27,
+  "missing_trials": [],
+  "actual_backend": "jax_gpu",
+  "precision": "float64 / complex128",
+  "converged_trials": 0,
+  "convergence_rate": 0.0,
+  "total_optimizer_wall_seconds": 32803.38531651699,
+  "gpu_backend_wall_seconds": 32636.786203200834,
+  "gpu_time_scope": "synchronized optimizer GPU calls including transfer/dispatch/JIT; excludes CPU probes, shared setup and post-trial numerical verification; not CUDA-kernel-only time",
+  "numerical_failures": [],
+  "regime_comparisons": {
+    "equal_objectives": {
+      "risk": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.00037260723869787506,
+        "mean_percent_improvement": 12.90890077703934,
+        "mean_fidelity_change": 9.799246350239432e-05,
+        "p05_change": 0.00022649268550082682
+      },
+      "continuation": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.0006064935620707125,
+        "mean_percent_improvement": 21.000368962450683,
+        "mean_fidelity_change": 0.00020013409336228083,
+        "p05_change": 0.00040803818185686236
+      }
+    },
+    "equal_passes": {
+      "risk": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.00037260723869787506,
+        "mean_percent_improvement": 12.90890077703934,
+        "mean_fidelity_change": 9.799246350239432e-05,
+        "p05_change": 0.00022649268550082682
+      },
+      "continuation": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.0006064935620707125,
+        "mean_percent_improvement": 21.000368962450683,
+        "mean_fidelity_change": 0.00020013409336228083,
+        "p05_change": 0.00040803818185686236
+      }
+    },
+    "equal_wall": {
+      "risk": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.00037260723869787506,
+        "mean_percent_improvement": 12.90890077703934,
+        "mean_fidelity_change": 9.799246350239432e-05,
+        "p05_change": 0.00022649268550082682
+      },
+      "continuation": {
+        "paired_seeds": 3,
+        "mean_delta_cvar": 0.0006064935620707125,
+        "mean_percent_improvement": 21.000368962450683,
+        "mean_fidelity_change": 0.00020013409336228083,
+        "p05_change": 0.00040803818185686236
+      }
+    }
+  },
+  "hyperparameter_search_trials": 0,
+  "hyperparameters_predeclared": true,
+  "validation_generated": false,
+  "statistical_superiority_established": false,
+  "decision": "NO-GO",
+  "decision_reason": "Interrupted work requires separate cost audit before a matched-efficiency claim",
+  "resume_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python full_matched_study.py --config full_matched_config.json --output results/full_matched_budget --backend gpu",
+  "confirmatory_command": null,
+  "confirmatory_status": "Not frozen or authorized by this development output; existing research_benchmark confirmation does not cover three-regime continuation comparison",
+  "direct_comparisons": {
+    "fixed_risk_vs_conventional": {
+      "equal_objectives": {
+        "paired_seeds": 3,
+        "pairs": [
+          {
+            "seed": 7500,
+            "delta_cvar": 0.0003677798911339014,
+            "percent_improvement": 12.721802428366624,
+            "wall_ratio": 1.513430667695878,
+            "pass_ratio": 2.4643775525639087,
+            "nominal_fidelity_difference": -1.9765622399914307e-06,
+            "mean_fidelity_difference": 8.869045806947362e-05,
+            "p05_fidelity_difference": 0.00022955964178306143,
+            "mean_leakage_difference": 4.009428862607692e-05,
+            "worst_sample_leakage_difference": 0.00015996033373402707
+          },
+          {
+            "seed": 7501,
+            "delta_cvar": 0.00021240478804817036,
+            "percent_improvement": 7.344530482618253,
+            "wall_ratio": 1.4039914882691968,
+            "pass_ratio": 2.283648331920411,
+            "nominal_fidelity_difference": 8.699172012183176e-06,
+            "mean_fidelity_difference": 3.431221053340483e-05,
+            "p05_fidelity_difference": 0.0001380579164688145,
+            "mean_leakage_difference": 1.2980304681330822e-05,
+            "worst_sample_leakage_difference": 5.492296359399954e-05
+          },
+          {
+            "seed": 7502,
+            "delta_cvar": 0.0005376370369115533,
+            "percent_improvement": 18.660369420133144,
+            "wall_ratio": 1.4992946803183769,
+            "pass_ratio": 2.442192305753038,
+            "nominal_fidelity_difference": -1.1874307376036342e-05,
+            "mean_fidelity_difference": 0.00017097472190430452,
+            "p05_fidelity_difference": 0.0003118604982506046,
+            "mean_leakage_difference": 5.989996313009578e-05,
+            "worst_sample_leakage_difference": 0.00027017797291255794
+          }
+        ],
+        "mean_delta_cvar": 0.00037260723869787506,
+        "seed_delta_range": [
+          0.00021240478804817036,
+          0.0005376370369115533
+        ],
+        "mean_percent_improvement": 12.90890077703934,
+        "seeds_favoring_second": 3,
+        "interpretation": "Lower empirical mean CVaR for risk",
+        "statistical_superiority_established": false
+      },
+      "equal_passes": {
+        "paired_seeds": 3,
+        "pairs": [
+          {
+            "seed": 7500,
+            "delta_cvar": 0.0003677798911339014,
+            "percent_improvement": 12.721802428366624,
+            "wall_ratio": 1.4600496011546569,
+            "pass_ratio": 2.4643775525639087,
+            "nominal_fidelity_difference": -1.9765622399914307e-06,
+            "mean_fidelity_difference": 8.869045806947362e-05,
+            "p05_fidelity_difference": 0.00022955964178306143,
+            "mean_leakage_difference": 4.009428862607692e-05,
+            "worst_sample_leakage_difference": 0.00015996033373402707
+          },
+          {
+            "seed": 7501,
+            "delta_cvar": 0.00021240478804817036,
+            "percent_improvement": 7.344530482618253,
+            "wall_ratio": 1.3989185558548138,
+            "pass_ratio": 2.283648331920411,
+            "nominal_fidelity_difference": 8.699172012183176e-06,
+            "mean_fidelity_difference": 3.431221053340483e-05,
+            "p05_fidelity_difference": 0.0001380579164688145,
+            "mean_leakage_difference": 1.2980304681330822e-05,
+            "worst_sample_leakage_difference": 5.492296359399954e-05
+          },
+          {
+            "seed": 7502,
+            "delta_cvar": 0.0005376370369115533,
+            "percent_improvement": 18.660369420133144,
+            "wall_ratio": 1.498232798120588,
+            "pass_ratio": 2.442192305753038,
+            "nominal_fidelity_difference": -1.1874307376036342e-05,
+            "mean_fidelity_difference": 0.00017097472190430452,
+            "p05_fidelity_difference": 0.0003118604982506046,
+            "mean_leakage_difference": 5.989996313009578e-05,
+            "worst_sample_leakage_difference": 0.00027017797291255794
+          }
+        ],
+        "mean_delta_cvar": 0.00037260723869787506,
+        "seed_delta_range": [
+          0.00021240478804817036,
+          0.0005376370369115533
+        ],
+        "mean_percent_improvement": 12.90890077703934,
+        "seeds_favoring_second": 3,
+        "interpretation": "Lower empirical mean CVaR for risk",
+        "statistical_superiority_established": false
+      },
+      "equal_wall": {
+        "paired_seeds": 3,
+        "pairs": [
+          {
+            "seed": 7500,
+            "delta_cvar": 0.0003677798911339014,
+            "percent_improvement": 12.721802428366624,
+            "wall_ratio": 1.5004400221193996,
+            "pass_ratio": 2.4643775525639087,
+            "nominal_fidelity_difference": -1.9765622399914307e-06,
+            "mean_fidelity_difference": 8.869045806947362e-05,
+            "p05_fidelity_difference": 0.00022955964178306143,
+            "mean_leakage_difference": 4.009428862607692e-05,
+            "worst_sample_leakage_difference": 0.00015996033373402707
+          },
+          {
+            "seed": 7501,
+            "delta_cvar": 0.00021240478804817036,
+            "percent_improvement": 7.344530482618253,
+            "wall_ratio": 1.4064764810458414,
+            "pass_ratio": 2.283648331920411,
+            "nominal_fidelity_difference": 8.699172012183176e-06,
+            "mean_fidelity_difference": 3.431221053340483e-05,
+            "p05_fidelity_difference": 0.0001380579164688145,
+            "mean_leakage_difference": 1.2980304681330822e-05,
+            "worst_sample_leakage_difference": 5.492296359399954e-05
+          },
+          {
+            "seed": 7502,
+            "delta_cvar": 0.0005376370369115533,
+            "percent_improvement": 18.660369420133144,
+            "wall_ratio": 1.5231435458649965,
+            "pass_ratio": 2.442192305753038,
+            "nominal_fidelity_difference": -1.1874307376036342e-05,
+            "mean_fidelity_difference": 0.00017097472190430452,
+            "p05_fidelity_difference": 0.0003118604982506046,
+            "mean_leakage_difference": 5.989996313009578e-05,
+            "worst_sample_leakage_difference": 0.00027017797291255794
+          }
+        ],
+        "mean_delta_cvar": 0.00037260723869787506,
+        "seed_delta_range": [
+          0.00021240478804817036,
+          0.0005376370369115533
+        ],
+        "mean_percent_improvement": 12.90890077703934,
+        "seeds_favoring_second": 3,
+        "interpretation": "Lower empirical mean CVaR for risk",
+        "statistical_superiority_established": false
+      }
+    },
+    "continuation_vs_conventional": {
+      "equal_objectives": {
+        "paired_seeds": 3,
+        "pairs": [
+          {
+            "seed": 7500,
+            "delta_cvar": 0.0005817968626485428,
+            "percent_improvement": 20.1248217167033,
+            "wall_ratio": 1.3685549791270604,
+            "pass_ratio": 2.2130792114153177,
+            "nominal_fidelity_difference": -4.037135468037967e-06,
+            "mean_fidelity_difference": 0.0001875322180024952,
+            "p05_fidelity_difference": 0.0004097746616872344,
+            "mean_leakage_difference": 5.432967523234728e-05,
+            "worst_sample_leakage_difference": 0.0002355943881826726
+          },
+          {
+            "seed": 7501,
+            "delta_cvar": 0.0006254628513215118,
+            "percent_improvement": 21.62724776352207,
+            "wall_ratio": 1.2467242583713785,
+            "pass_ratio": 1.9913229940657258,
+            "nominal_fidelity_difference": 1.0081414867357807e-05,
+            "mean_fidelity_difference": 0.00020744205958944661,
+            "p05_fidelity_difference": 0.00043296333041698,
+            "mean_leakage_difference": 3.098031812239128e-05,
+            "worst_sample_leakage_difference": 0.00013699427142901803
+          },
+          {
+            "seed": 7502,
+            "delta_cvar": 0.000612220972242083,
+            "percent_improvement": 21.249037407126682,
+            "wall_ratio": 1.3645093267219948,
+            "pass_ratio": 2.213129632430797,
+            "nominal_fidelity_difference": 1.937270642793365e-06,
+            "mean_fidelity_difference": 0.00020542800249490067,
+            "p05_fidelity_difference": 0.00038137655346637267,
+            "mean_leakage_difference": 3.722002183068289e-05,
+            "worst_sample_leakage_difference": 0.0001630702491190779
+          }
+        ],
+        "mean_delta_cvar": 0.0006064935620707125,
+        "seed_delta_range": [
+          0.0005817968626485428,
+          0.0006254628513215118
+        ],
+        "mean_percent_improvement": 21.000368962450683,
+        "seeds_favoring_second": 3,
+        "interpretation": "Lower empirical mean CVaR for continuation",
+        "statistical_superiority_established": false
+      },
+      "equal_passes": {
+        "paired_seeds": 3,
+        "pairs": [
+          {
+            "seed": 7500,
+            "delta_cvar": 0.0005817968626485428,
+            "percent_improvement": 20.1248217167033,
+            "wall_ratio": 1.3217127313632704,
+            "pass_ratio": 2.2130792114153177,
+            "nominal_fidelity_difference": -4.037135468037967e-06,
+            "mean_fidelity_difference": 0.0001875322180024952,
+            "p05_fidelity_difference": 0.0004097746616872344,
+            "mean_leakage_difference": 5.432967523234728e-05,
+            "worst_sample_leakage_difference": 0.0002355943881826726
+          },
+          {
+            "seed": 7501,
+            "delta_cvar": 0.0006254628513215118,
+            "percent_improvement": 21.62724776352207,
+            "wall_ratio": 1.2218052406150435,
+            "pass_ratio": 1.9913229940657258,
+            "nominal_fidelity_difference": 1.0081414867357807e-05,
+            "mean_fidelity_difference": 0.00020744205958944661,
+            "p05_fidelity_difference": 0.00043296333041698,
+            "mean_leakage_difference": 3.098031812239128e-05,
+            "worst_sample_leakage_difference": 0.00013699427142901803
+          },
+          {
+            "seed": 7502,
+            "delta_cvar": 0.000612220972242083,
+            "percent_improvement": 21.249037407126682,
+            "wall_ratio": 1.3650870659513452,
+            "pass_ratio": 2.213129632430797,
+            "nominal_fidelity_difference": 1.937270642793365e-06,
+            "mean_fidelity_difference": 0.00020542800249490067,
+            "p05_fidelity_difference": 0.00038137655346637267,
+            "mean_leakage_difference": 3.722002183068289e-05,
+            "worst_sample_leakage_difference": 0.0001630702491190779
+          }
+        ],
+        "mean_delta_cvar": 0.0006064935620707125,
+        "seed_delta_range": [
+          0.0005817968626485428,
+          0.0006254628513215118
+        ],
+        "mean_percent_improvement": 21.000368962450683,
+        "seeds_favoring_second": 3,
+        "interpretation": "Lower empirical mean CVaR for continuation",
+        "statistical_superiority_established": false
+      },
+      "equal_wall": {
+        "paired_seeds": 3,
+        "pairs": [
+          {
+            "seed": 7500,
+            "delta_cvar": 0.0005817968626485428,
+            "percent_improvement": 20.1248217167033,
+            "wall_ratio": 1.370447157995345,
+            "pass_ratio": 2.2130792114153177,
+            "nominal_fidelity_difference": -4.037135468037967e-06,
+            "mean_fidelity_difference": 0.0001875322180024952,
+            "p05_fidelity_difference": 0.0004097746616872344,
+            "mean_leakage_difference": 5.432967523234728e-05,
+            "worst_sample_leakage_difference": 0.0002355943881826726
+          },
+          {
+            "seed": 7501,
+            "delta_cvar": 0.0006254628513215118,
+            "percent_improvement": 21.62724776352207,
+            "wall_ratio": 1.2660230206673728,
+            "pass_ratio": 1.9913229940657258,
+            "nominal_fidelity_difference": 1.0081414867357807e-05,
+            "mean_fidelity_difference": 0.00020744205958944661,
+            "p05_fidelity_difference": 0.00043296333041698,
+            "mean_leakage_difference": 3.098031812239128e-05,
+            "worst_sample_leakage_difference": 0.00013699427142901803
+          },
+          {
+            "seed": 7502,
+            "delta_cvar": 0.000612220972242083,
+            "percent_improvement": 21.249037407126682,
+            "wall_ratio": 1.3984171229478883,
+            "pass_ratio": 2.213129632430797,
+            "nominal_fidelity_difference": 1.937270642793365e-06,
+            "mean_fidelity_difference": 0.00020542800249490067,
+            "p05_fidelity_difference": 0.00038137655346637267,
+            "mean_leakage_difference": 3.722002183068289e-05,
+            "worst_sample_leakage_difference": 0.0001630702491190779
+          }
+        ],
+        "mean_delta_cvar": 0.0006064935620707125,
+        "seed_delta_range": [
+          0.0005817968626485428,
+          0.0006254628513215118
+        ],
+        "mean_percent_improvement": 21.000368962450683,
+        "seeds_favoring_second": 3,
+        "interpretation": "Lower empirical mean CVaR for continuation",
+        "statistical_superiority_established": false
+      }
+    },
+    "continuation_vs_fixed_risk": {
+      "equal_objectives": {
+        "paired_seeds": 3,
+        "pairs": [
+          {
+            "seed": 7500,
+            "delta_cvar": 0.00021401697151464134,
+            "percent_improvement": 8.482094605884436,
+            "wall_ratio": 0.9042733230790257,
+            "pass_ratio": 0.898027661838121,
+            "nominal_fidelity_difference": -2.060573228046536e-06,
+            "mean_fidelity_difference": 9.884175993302158e-05,
+            "p05_fidelity_difference": 0.000180215019904173,
+            "mean_leakage_difference": 1.4235386606270355e-05,
+            "worst_sample_leakage_difference": 7.563405444864553e-05
+          },
+          {
+            "seed": 7501,
+            "delta_cvar": 0.00041305806327334143,
+            "percent_improvement": 15.41486687758292,
+            "wall_ratio": 0.887985624405962,
+            "pass_ratio": 0.8719919640127528,
+            "nominal_fidelity_difference": 1.3822428551746313e-06,
+            "mean_fidelity_difference": 0.00017312984905604178,
+            "p05_fidelity_difference": 0.0002949054139481655,
+            "mean_leakage_difference": 1.8000013441060457e-05,
+            "worst_sample_leakage_difference": 8.207130783501847e-05
+          },
+          {
+            "seed": 7502,
+            "delta_cvar": 7.458393533052964e-05,
+            "percent_improvement": 3.182542099760024,
+            "wall_ratio": 0.9101008258311433,
+            "pass_ratio": 0.9062061276736312,
+            "nominal_fidelity_difference": 1.3811578018829707e-05,
+            "mean_fidelity_difference": 3.445328059059616e-05,
+            "p05_fidelity_difference": 6.951605521576809e-05,
+            "mean_leakage_difference": -2.267994129941289e-05,
+            "worst_sample_leakage_difference": -0.00010710772379348004
+          }
+        ],
+        "mean_delta_cvar": 0.00023388632337283748,
+        "seed_delta_range": [
+          7.458393533052964e-05,
+          0.00041305806327334143
+        ],
+        "mean_percent_improvement": 9.026501194409127,
+        "seeds_favoring_second": 3,
+        "interpretation": "Lower empirical mean CVaR for continuation",
+        "statistical_superiority_established": false
+      },
+      "equal_passes": {
+        "paired_seeds": 3,
+        "pairs": [
+          {
+            "seed": 7500,
+            "delta_cvar": 0.00021401697151464134,
+            "percent_improvement": 8.482094605884436,
+            "wall_ratio": 0.9052519382341634,
+            "pass_ratio": 0.898027661838121,
+            "nominal_fidelity_difference": -2.060573228046536e-06,
+            "mean_fidelity_difference": 9.884175993302158e-05,
+            "p05_fidelity_difference": 0.000180215019904173,
+            "mean_leakage_difference": 1.4235386606270355e-05,
+            "worst_sample_leakage_difference": 7.563405444864553e-05
+          },
+          {
+            "seed": 7501,
+            "delta_cvar": 0.00041305806327334143,
+            "percent_improvement": 15.41486687758292,
+            "wall_ratio": 0.8733926900186518,
+            "pass_ratio": 0.8719919640127528,
+            "nominal_fidelity_difference": 1.3822428551746313e-06,
+            "mean_fidelity_difference": 0.00017312984905604178,
+            "p05_fidelity_difference": 0.0002949054139481655,
+            "mean_leakage_difference": 1.8000013441060457e-05,
+            "worst_sample_leakage_difference": 8.207130783501847e-05
+          },
+          {
+            "seed": 7502,
+            "delta_cvar": 7.458393533052964e-05,
+            "percent_improvement": 3.182542099760024,
+            "wall_ratio": 0.9111314794761779,
+            "pass_ratio": 0.9062061276736312,
+            "nominal_fidelity_difference": 1.3811578018829707e-05,
+            "mean_fidelity_difference": 3.445328059059616e-05,
+            "p05_fidelity_difference": 6.951605521576809e-05,
+            "mean_leakage_difference": -2.267994129941289e-05,
+            "worst_sample_leakage_difference": -0.00010710772379348004
+          }
+        ],
+        "mean_delta_cvar": 0.00023388632337283748,
+        "seed_delta_range": [
+          7.458393533052964e-05,
+          0.00041305806327334143
+        ],
+        "mean_percent_improvement": 9.026501194409127,
+        "seeds_favoring_second": 3,
+        "interpretation": "Lower empirical mean CVaR for continuation",
+        "statistical_superiority_established": false
+      },
+      "equal_wall": {
+        "paired_seeds": 3,
+        "pairs": [
+          {
+            "seed": 7500,
+            "delta_cvar": 0.00021401697151464134,
+            "percent_improvement": 8.482094605884436,
+            "wall_ratio": 0.9133635052333267,
+            "pass_ratio": 0.898027661838121,
+            "nominal_fidelity_difference": -2.060573228046536e-06,
+            "mean_fidelity_difference": 9.884175993302158e-05,
+            "p05_fidelity_difference": 0.000180215019904173,
+            "mean_leakage_difference": 1.4235386606270355e-05,
+            "worst_sample_leakage_difference": 7.563405444864553e-05
+          },
+          {
+            "seed": 7501,
+            "delta_cvar": 0.00041305806327334143,
+            "percent_improvement": 15.41486687758292,
+            "wall_ratio": 0.9001380668135817,
+            "pass_ratio": 0.8719919640127528,
+            "nominal_fidelity_difference": 1.3822428551746313e-06,
+            "mean_fidelity_difference": 0.00017312984905604178,
+            "p05_fidelity_difference": 0.0002949054139481655,
+            "mean_leakage_difference": 1.8000013441060457e-05,
+            "worst_sample_leakage_difference": 8.207130783501847e-05
+          },
+          {
+            "seed": 7502,
+            "delta_cvar": 7.458393533052964e-05,
+            "percent_improvement": 3.182542099760024,
+            "wall_ratio": 0.9181124961887452,
+            "pass_ratio": 0.9062061276736312,
+            "nominal_fidelity_difference": 1.3811578018829707e-05,
+            "mean_fidelity_difference": 3.445328059059616e-05,
+            "p05_fidelity_difference": 6.951605521576809e-05,
+            "mean_leakage_difference": -2.267994129941289e-05,
+            "worst_sample_leakage_difference": -0.00010710772379348004
+          }
+        ],
+        "mean_delta_cvar": 0.00023388632337283748,
+        "seed_delta_range": [
+          7.458393533052964e-05,
+          0.00041305806327334143
+        ],
+        "mean_percent_improvement": 9.026501194409127,
+        "seeds_favoring_second": 3,
+        "interpretation": "Lower empirical mean CVaR for continuation",
+        "statistical_superiority_established": false
+      }
+    }
+  },
+  "question_3_efficiency_scope": "Read equal_passes and equal_wall separately, with actual wall/pass ratios; equal-call advantage alone does not establish efficiency.",
+  "interrupted_attempts": [
+    "results/full_matched_budget/interrupted_attempts/equal_objectives_continuation_7500_progress_0.json",
+    "results/full_matched_budget/interrupted_attempts/equal_passes_continuation_7500_progress_0.json"
+  ]
+}

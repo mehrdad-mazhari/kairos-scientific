@@ -1,0 +1,60 @@
+{
+  "diagnostics": {
+    "requested_backend": "jax_gpu",
+    "actual_backend": "cpu",
+    "platform": "gpu",
+    "device": "NVIDIA GeForce RTX 2080 SUPER",
+    "precision": "float32",
+    "gpu_qualified": false,
+    "oom_reductions": 0,
+    "forward_scenario_passes": 4,
+    "adjoint_scenario_passes": 1,
+    "padded_forward_scenario_passes": 4,
+    "batch_size": 32,
+    "estimated_bytes_per_scenario": 16130200,
+    "memory_budget_bytes": 6012954214,
+    "kernel_cache_hit": true,
+    "last_execution_batch_size": 1,
+    "qualification_production_solves": 1,
+    "qualification_cpu_passes": 2,
+    "accuracy_gate": {
+      "passed": false,
+      "scenarios": [
+        0
+      ],
+      "production_metric_error": 9.238719940185547e-06,
+      "solver_metric_tolerance": 2e-06,
+      "objective_error": 1.7695294183094415e-05,
+      "gradient_max_error": 3.61094728693577e-07,
+      "gradient_atol": 2e-05,
+      "gradient_rtol": 0.0002,
+      "production_channel_solves": 1,
+      "cpu_surrogate_passes": 2,
+      "jax_forward_passes": 4,
+      "maximum_trace_error": 5.0067901611328125e-06,
+      "hermiticity_error": 1.3651372228196124e-06,
+      "minimum_eigenvalue": 4.803509257023109e-10,
+      "elapsed_seconds": 2.241753597000752
+    },
+    "effective_precision": "float64",
+    "fallback_reason": "JAX accuracy gate failed: {'passed': False, 'scenarios': [0], 'production_metric_error': 9.238719940185547e-06, 'solver_metric_tolerance': 2e-06, 'objective_error': 1.7695294183094415e-05, 'gradient_max_error': 3.61094728693577e-07, 'gradient_atol': 2e-05, 'gradient_rtol': 0.0002, 'production_channel_solves': 1, 'cpu_surrogate_passes': 2, 'jax_forward_passes': 4, 'maximum_trace_error': 5.0067901611328125e-06, 'hermiticity_error': 1.3651372228196124e-06, 'minimum_eigenvalue': 4.803509257023109e-10, 'elapsed_seconds': 2.241753597000752}",
+    "cpu_fallback_passes": 2,
+    "memory_stats": {
+      "num_allocs": 44974,
+      "bytes_in_use": 24320,
+      "peak_bytes_in_use": 134363904,
+      "largest_alloc_size": 33554432,
+      "bytes_limit": 6121586688,
+      "bytes_reserved": 0,
+      "peak_bytes_reserved": 0,
+      "largest_free_block_bytes": 67108864,
+      "pool_bytes": 136314880,
+      "peak_pool_bytes": 136314880
+    }
+  },
+  "warnings": [
+    "JAX execution failed; returning trusted CPU GRAPE results: JAX accuracy gate failed: {'passed': False, 'scenarios': [0], 'production_metric_error': 9.238719940185547e-06, 'solver_metric_tolerance': 2e-06, 'objective_error': 1.7695294183094415e-05, 'gradient_max_error': 3.61094728693577e-07, 'gradient_atol': 2e-05, 'gradient_rtol': 0.0002, 'production_channel_solves': 1, 'cpu_surrogate_passes': 2, 'jax_forward_passes': 4, 'maximum_trace_error': 5.0067901611328125e-06, 'hermiticity_error': 1.3651372228196124e-06, 'minimum_eigenvalue': 4.803509257023109e-10, 'elapsed_seconds': 2.241753597000752}"
+  ],
+  "objective_difference": 0.0,
+  "gradient_difference": 0.0
+}

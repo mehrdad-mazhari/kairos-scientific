@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "checks": {
+    "conventional": {
+      "requested_backend": "jax_gpu",
+      "actual_backend": "jax_gpu",
+      "platform": "gpu",
+      "device": "NVIDIA GeForce RTX 2080 SUPER",
+      "precision": "float64",
+      "gpu_qualified": true,
+      "oom_reductions": 0,
+      "forward_scenario_passes": 9,
+      "adjoint_scenario_passes": 3,
+      "padded_forward_scenario_passes": 9,
+      "batch_size": 32,
+      "estimated_bytes_per_scenario": 32260400,
+      "memory_budget_bytes": 6012954214,
+      "kernel_cache_hit": false,
+      "last_execution_batch_size": 3,
+      "qualification_production_solves": 3,
+      "qualification_cpu_passes": 3,
+      "accuracy_gate": {
+        "passed": true,
+        "scenarios": [
+          0,
+          55,
+          109
+        ],
+        "production_metric_error": 1.4853566876471547e-07,
+        "solver_metric_tolerance": 2e-06,
+        "objective_error": 2.3180242447740085e-15,
+        "gradient_max_error": 2.7798943702528334e-16,
+        "gradient_atol": 2e-07,
+        "gradient_rtol": 2e-06,
+        "production_channel_solves": 3,
+        "cpu_surrogate_passes": 3,
+        "jax_forward_passes": 9,
+        "maximum_trace_error": 1.6098233869306238e-14,
+        "hermiticity_error": 4.2912651581028196e-15,
+        "minimum_eigenvalue": 6.648695655422112e-10,
+        "elapsed_seconds": 3.3442275520001203
+      },
+      "memory_stats": {
+        "num_allocs": 1541,
+        "bytes_in_use": 15360,
+        "peak_bytes_in_use": 134354944,
+        "largest_alloc_size": 33554432,
+        "bytes_limit": 6121586688,
+        "bytes_reserved": 0,
+        "peak_bytes_reserved": 0,
+        "largest_free_block_bytes": 67108864,
+        "pool_bytes": 136314880,
+        "peak_pool_bytes": 136314880
+      }
+    },
+    "risk": {
+      "requested_backend": "jax_gpu",
+      "actual_backend": "jax_gpu",
+      "platform": "gpu",
+      "device": "NVIDIA GeForce RTX 2080 SUPER",
+      "precision": "float64",
+      "gpu_qualified": true,
+      "oom_reductions": 0,
+      "forward_scenario_passes": 12,
+      "adjoint_scenario_passes": 3,
+      "padded_forward_scenario_passes": 12,
+      "batch_size": 32,
+      "estimated_bytes_per_scenario": 32260400,
+      "memory_budget_bytes": 6012954214,
+      "kernel_cache_hit": true,
+      "last_execution_batch_size": 3,
+      "qualification_production_solves": 3,
+      "qualification_cpu_passes": 6,
+      "accuracy_gate": {
+        "passed": true,
+        "scenarios": [
+          0,
+          55,
+          109
+        ],
+        "production_metric_error": 1.4853566876471547e-07,
+        "solver_metric_tolerance": 2e-06,
+        "objective_error": 2.42861286636753e-17,
+        "gradient_max_error": 5.134781488891349e-16,
+        "gradient_atol": 2e-07,
+        "gradient_rtol": 2e-06,
+        "production_channel_solves": 3,
+        "cpu_surrogate_passes": 6,
+        "jax_forward_passes": 12,
+        "maximum_trace_error": 1.6098233869306238e-14,
+        "hermiticity_error": 4.2912651581028196e-15,
+        "minimum_eigenvalue": 6.648695655422112e-10,
+        "elapsed_seconds": 2.300185460000648
+      },
+      "memory_stats": {
+        "num_allocs": 3122,
+        "bytes_in_use": 15360,
+        "peak_bytes_in_use": 134354944,
+        "largest_alloc_size": 33554432,
+        "bytes_limit": 6121586688,
+        "bytes_reserved": 0,
+        "peak_bytes_reserved": 0,
+        "largest_free_block_bytes": 67108864,
+        "pool_bytes": 136314880,
+        "peak_pool_bytes": 136314880
+      }
+    }
+  },
+  "shared_setup_seconds": 20.198876890000065,
+  "certificate": "results/jax_rtx2080_qualified/gpu_qualification_float64.json"
+}

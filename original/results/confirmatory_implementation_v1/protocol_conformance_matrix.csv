@@ -1,0 +1,17 @@
+area,requirement,status,evidence_or_implementation
+Scientific freeze,All frozen artifact and dependency hashes,VERIFIED,scientific_freeze_audit.json
+Candidate identity,Four primary and one diagnostic hash/role,VERIFIED,nominal_reproduction.json
+Nominal production metrics,Same exact frozen I/Q and strict CPU solver,VERIFIED,nominal_reproduction.json
+Validation generation,"Exactly2000, seed941206, frozen iid generator",IMPLEMENTED_NOT_EXECUTED,load_or_generate_dataset
+Unique cohort,"Global reservation, atomic commit, no redraw after ambiguity",IMPLEMENTED_TESTED,cohort registry and generation marker
+CPU production,"Five-level Lindblad, six unconditional states, strict tolerances",REUSES_FROZEN_KERNEL,preconfirmatory_checks.solve
+Checkpointing,Payload/source/cohort/pulse/scenario checksums; preserve failures,IMPLEMENTED_TESTED,verify_checkpoint/evaluate
+Primary inference,"Frozen50000 paired percentile, six Bonferroni contrasts",FROZEN_HELPER_REUSED,confirmatory_statistics.paired_cvar_intervals
+Bootstrap sensitivity,Same seed stream extended to100000,IMPLEMENTED_NOT_EXECUTED,confirmatory_analysis_v1.analyze
+Secondary inference,Same paired indices; descriptive95% intervals,IMPLEMENTED_TESTED,secondary_intervals
+P05 certification,Existing one-sided95% and simultaneous four-pulse method,FROZEN_METHOD_REUSED,statistical_certification.tail_bound_details
+Numerical gates,All-case physicality; fixed20-index repeats; failures block,IMPLEMENTED_NOT_EXECUTED_ON_VALIDATION,numerical_repeat_checks
+Numerical resolution interpretation,Finite-repeat evidence and existing resolution caution,REVIEW_REQUIRED,summarize_claim
+Global confirmation label,Operational mapping not uniquely frozen previously,REVIEW_REQUIRED,confirmation_decision.json proposal
+Publication outputs,Requested tables/reports and seven figure types,IMPLEMENTED_NOT_GENERATED,confirmatory_analysis_v1.figures
+Original artifacts,No alterations or replacement of original freeze,VERIFIED,scientific_freeze_audit.json

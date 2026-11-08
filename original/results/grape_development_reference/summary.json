@@ -1,0 +1,69 @@
+{
+  "calibration": {
+    "nominal": {
+      "fidelity": 0.9996591350967047,
+      "infidelity": 0.0003408649032953237,
+      "leakage": 4.26975071437738e-05,
+      "state_fidelities": [
+        0.999685866428184,
+        0.9996858798537797,
+        0.9996445507620617,
+        0.9996319677480237,
+        0.9997593610888551,
+        0.999547184699324
+      ],
+      "state_leakages": [
+        4.2676020845942684e-05,
+        4.271899344160494e-05,
+        1.8611158316024622e-05,
+        6.678385597152299e-05,
+        2.3671714303947775e-05,
+        6.172329998359983e-05
+      ],
+      "max_trace_error": 2.886579864025407e-15,
+      "min_output_eigenvalue": 6.493222227943053e-10
+    },
+    "raw_method": "DRAG",
+    "objective": "nominal infidelity",
+    "channel_simulations": 414,
+    "objective_calls": 414,
+    "elapsed_seconds": 30.737938881000446,
+    "optimizer_success": false,
+    "message": "Maximum number of function evaluations has been exceeded."
+  },
+  "strict_nominal": {
+    "fidelity": 0.9996591328311092,
+    "infidelity": 0.0003408671688908127,
+    "leakage": 4.269814708650252e-05,
+    "state_fidelities": [
+      0.9996858633377765,
+      0.9996858768384593,
+      0.9996445505947025,
+      0.9996319665469702,
+      0.9997593585287303,
+      0.9995471811400166
+    ],
+    "state_leakages": [
+      4.267668899757038e-05,
+      4.2719605175434676e-05,
+      1.861127957100005e-05,
+      6.6785014602005e-05,
+      2.3671863967225416e-05,
+      6.172443020577963e-05
+    ],
+    "max_trace_error": 5.773159728050814e-15,
+    "min_output_eigenvalue": 6.493224549638219e-10
+  },
+  "nominal_qualified": true,
+  "nominal_only": true,
+  "selection_used": false,
+  "validation_used": false,
+  "max_calibration_evaluations": 500,
+  "source_hash": "d356585e3e9248c20fddbb2b2fb6cf26426ea987fa0ca7afc8fe707b8da72da8",
+  "qualified_start_counts": {
+    "7500": 5,
+    "7501": 5,
+    "7502": 5
+  },
+  "note": "Stronger reference for a future matched-start rerun; the completed pilot retains its original five-call reference."
+}

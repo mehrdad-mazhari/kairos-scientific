@@ -1,0 +1,122 @@
+{
+  "n_devices": 2000,
+  "tail_mass": 100.00000000000009,
+  "bootstrap_repetitions": 50000,
+  "bootstrap_seed": 941207,
+  "comparisons": [
+    {
+      "reference": "calibrated_drag",
+      "candidate": "conventional",
+      "delta_cvar": 0.0003849893461625657,
+      "ci95": [
+        0.00033866066595890414,
+        0.00043317075018025405
+      ],
+      "family_adjusted_ci": [
+        0.0003227513409798,
+        0.00045000746087596016
+      ],
+      "family_size": 6,
+      "adjusted_confidence": 0.9916666666666667,
+      "nominal_alpha": 0.05,
+      "direction": "candidate improvement",
+      "engineering_pass_not_implied": true,
+      "scope": "Approximate paired device-bootstrap inference for fixed pulses, conditional on development selection"
+    },
+    {
+      "reference": "calibrated_drag",
+      "candidate": "risk",
+      "delta_cvar": 2.5677928793322192e-05,
+      "ci95": [
+        1.097987681487689e-05,
+        4.139194271943127e-05
+      ],
+      "family_adjusted_ci": [
+        5.607020187499714e-06,
+        4.7162812934856225e-05
+      ],
+      "family_size": 6,
+      "adjusted_confidence": 0.9916666666666667,
+      "nominal_alpha": 0.05,
+      "direction": "candidate improvement",
+      "engineering_pass_not_implied": true,
+      "scope": "Approximate paired device-bootstrap inference for fixed pulses, conditional on development selection"
+    },
+    {
+      "reference": "calibrated_drag",
+      "candidate": "continuation",
+      "delta_cvar": 0.00037760537335674227,
+      "ci95": [
+        0.0003571283463131924,
+        0.00039953924108493345
+      ],
+      "family_adjusted_ci": [
+        0.0003493476926575633,
+        0.00040715411355690353
+      ],
+      "family_size": 6,
+      "adjusted_confidence": 0.9916666666666667,
+      "nominal_alpha": 0.05,
+      "direction": "candidate improvement",
+      "engineering_pass_not_implied": true,
+      "scope": "Approximate paired device-bootstrap inference for fixed pulses, conditional on development selection"
+    },
+    {
+      "reference": "conventional",
+      "candidate": "risk",
+      "delta_cvar": -0.0003593114173692435,
+      "ci95": [
+        -0.00039571311636190694,
+        -0.00032390131624310535
+      ],
+      "family_adjusted_ci": [
+        -0.0004082295836575685,
+        -0.00031232040435354727
+      ],
+      "family_size": 6,
+      "adjusted_confidence": 0.9916666666666667,
+      "nominal_alpha": 0.05,
+      "direction": "candidate inferior",
+      "engineering_pass_not_implied": true,
+      "scope": "Approximate paired device-bootstrap inference for fixed pulses, conditional on development selection"
+    },
+    {
+      "reference": "conventional",
+      "candidate": "continuation",
+      "delta_cvar": -7.383972805823438e-06,
+      "ci95": [
+        -3.793658824673576e-05,
+        2.3553635056813827e-05
+      ],
+      "family_adjusted_ci": [
+        -4.893173177861862e-05,
+        3.363316641992915e-05
+      ],
+      "family_size": 6,
+      "adjusted_confidence": 0.9916666666666667,
+      "nominal_alpha": 0.05,
+      "direction": "inconclusive",
+      "engineering_pass_not_implied": true,
+      "scope": "Approximate paired device-bootstrap inference for fixed pulses, conditional on development selection"
+    },
+    {
+      "reference": "risk",
+      "candidate": "continuation",
+      "delta_cvar": 0.0003519274445634201,
+      "ci95": [
+        0.0003372792489591606,
+        0.0003667213511211522
+      ],
+      "family_adjusted_ci": [
+        0.0003319240292942029,
+        0.0003716725267862103
+      ],
+      "family_size": 6,
+      "adjusted_confidence": 0.9916666666666667,
+      "nominal_alpha": 0.05,
+      "direction": "candidate improvement",
+      "engineering_pass_not_implied": true,
+      "scope": "Approximate paired device-bootstrap inference for fixed pulses, conditional on development selection"
+    }
+  ]
+}

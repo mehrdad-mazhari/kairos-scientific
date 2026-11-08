@@ -1,0 +1,33 @@
+{
+  "decision": "RELEASE APPROVED",
+  "implementation_id": "confirmatory_execution_v1.final_review.1",
+  "implementation_manifest_sha256": "165b7e3e446ab04d8f59e72f694509ceea2deb19571a86dd8e9f09fce6e0522b",
+  "implementation_sources": {
+    "confirmatory_execution_v1.py": "a15f476dde9c1c11c378c3fd336d294317dfe638792d071995e40c37e40e4d8f",
+    "confirmatory_analysis_v1.py": "5d205cb08007a4654fc163d9db59c017788bf5d04fccf357550c03230480b635"
+  },
+  "reviewed_artifacts": {
+    "results/confirmatory_implementation_v1/reporting_interpretation.json": "82bc3fbee31c1abf9581f9d2b1cfd68269d46044500a6f312542c8fa269aae2b"
+  },
+  "scientific_manifest_sha256": "f4f7b02e388e427727b86f82c2d5da3910348c3c98b6d7c6a04173100e1c9f49",
+  "acceptance_record_sha256": "cbfef64d51d471fff3aa24d9ddf54d7f9e02fbbd616a333435539cfd6250e656",
+  "conformity": "PASS",
+  "statistical_correctness": "PASS",
+  "numerical_interpretation": "ADOPTED_PRE_DATA_SEPARATE_FROM_STATISTICS",
+  "frozen_artifacts_verified": 4383,
+  "frozen_candidates_verified": 5,
+  "numerical_preflight_comparisons": 30,
+  "tests_passed": 38,
+  "remaining_substantive_discrepancies": [],
+  "validation_devices_generated": 0,
+  "candidate_device_validation_evaluations": 0,
+  "campaign_executed": false,
+  "limitations": [
+    "Approximate bootstrap coverage",
+    "Finite-repeat evidence is not a uniform error bound",
+    "Simulation/model assumptions",
+    "No hardware verification",
+    "Full campaign not run during review"
+  ],
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MPLCONFIGDIR=/tmp/kairos-mpl .venv/bin/python -u confirmatory_execution_v1.py --run --output results/confirmatory_validation_v1"
+}

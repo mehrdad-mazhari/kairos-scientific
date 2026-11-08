@@ -1,0 +1,5 @@
+{
+  "passed": 25,
+  "failed": 0,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MPLCONFIGDIR=/tmp/kairos-mpl .venv/bin/python -m unittest test_corrective_study_analysis test_binding_budget_optimizer test_binding_budget_caps.BindingCaps.test_resource_caps_bind_before_iteration_guard test_full_matched_study -q"
+}
