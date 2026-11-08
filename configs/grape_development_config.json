@@ -1,0 +1,33 @@
+{
+  "base_config": "challenge_config.json",
+  "reference_checkpoint": "results/research_benchmark_complete/references.json",
+  "training_samples": 100,
+  "selection_samples": 200,
+  "training_seed": 7400,
+  "selection_seed": 7401,
+  "reserved_validation_seed": 7402,
+  "optimizer_seeds": [7500, 7501, 7502],
+  "regimes": ["equal_objectives", "equal_passes", "equal_wall"],
+  "iterations": 150,
+  "objective_calls": 1000,
+  "scenario_passes": 220500,
+  "wall_seconds": 1800,
+  "restarts": 5,
+  "harmonics": 5,
+  "substeps": 4,
+  "risk_weight": 1.0,
+  "leakage_weight": 2.0,
+  "smoothing": 0.000001,
+  "qualified_perturbation_scale": 0.002,
+  "continuation_schedule": [0, 0.1, 0.5, 1.0],
+  "gradient_tolerance": 0.0001,
+  "relative_objective_tolerance": 0.0000001,
+  "parameter_tolerance": 0.00001,
+  "diagnostic": {
+    "optimizer_seeds": [7500, 7501],
+    "regimes": ["equal_objectives"],
+    "iterations": 24,
+    "objective_calls": 24,
+    "substeps": 2
+  }
+}

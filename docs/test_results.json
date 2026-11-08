@@ -1,0 +1,29 @@
+{
+  "historical_source_suite": {
+    "tests_run": 201,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "command": "python -m unittest discover -p 'test_*.py'",
+    "cwd": "reproducibility/original",
+    "seconds": 91.377
+  },
+  "packaged_checks": {
+    "tests_run": 4,
+    "failed": 0,
+    "command": "python -m unittest discover -s tests -v",
+    "coverage": [
+      "imports",
+      "five-level model",
+      "CPU Lindblad fidelity/leakage",
+      "Fourier analytic gradient vs finite differences",
+      "constraints",
+      "frozen configuration and hashes"
+    ]
+  },
+  "examples": {
+    "passed": 6,
+    "failed": 0
+  },
+  "gpu_note": "Optional JAX CPU tests ran; CUDA initialization warned no visible device. No GPU benchmark or research campaign was rerun."
+}
